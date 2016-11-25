@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MeshServiceApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/centralManager">centralManager</option>
+		
+		<option value="//api/name/meshId">meshId</option>
+		
+		<option value="//api/name/meshServiceApiDelegate">meshServiceApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/associateDevice:authorisationCode:">- associateDevice:authorisationCode:</option>
+		
+		<option value="//api/name/associateDevice:authorisationCode:deviceId:success:progress:failure:">- associateDevice:authorisationCode:deviceId:success:progress:failure:</option>
+		
+		<option value="//api/name/connectBridge:enableBridgeNotification:">- connectBridge:enableBridgeNotification:</option>
+		
+		<option value="//api/name/disconnectBridge:">- disconnectBridge:</option>
+		
+		<option value="//api/name/getActiveBearer">- getActiveBearer</option>
+		
+		<option value="//api/name/getApplicationCode">- getApplicationCode</option>
+		
+		<option value="//api/name/getAuthorizationCode:">- getAuthorizationCode:</option>
+		
+		<option value="//api/name/getControllerAddress">- getControllerAddress</option>
+		
+		<option value="//api/name/getDeviceHashFromShortCode:">- getDeviceHashFromShortCode:</option>
+		
+		<option value="//api/name/getDeviceHashFromUuid:">- getDeviceHashFromUuid:</option>
+		
+		<option value="//api/name/getMeshId">- getMeshId</option>
+		
+		<option value="//api/name/getTTL">- getTTL</option>
+		
+		<option value="//api/name/killTransaction:">- killTransaction:</option>
+		
+		<option value="//api/name/processMeshAdvert:RSSI:">- processMeshAdvert:RSSI:</option>
+		
+		<option value="//api/name/setAttentionPreAssociation:attentionState:withDuration:">- setAttentionPreAssociation:attentionState:withDuration:</option>
+		
+		<option value="//api/name/setBluetoothBearerEnabled">- setBluetoothBearerEnabled</option>
+		
+		<option value="//api/name/setContinuousLeScanEnabled:">- setContinuousLeScanEnabled:</option>
+		
+		<option value="//api/name/setControllerAddress:">- setControllerAddress:</option>
+		
+		<option value="//api/name/setDeviceDiscoveryFilterEnabled:">- setDeviceDiscoveryFilterEnabled:</option>
+		
+		<option value="//api/name/setDeviceDiscoveryFilterEnabled:uuid:appearance:">- setDeviceDiscoveryFilterEnabled:uuid:appearance:</option>
+		
+		<option value="//api/name/setNetworkPassPhrase:">- setNetworkPassPhrase:</option>
+		
+		<option value="//api/name/setNextDeviceId:">- setNextDeviceId:</option>
+		
+		<option value="//api/name/setResendInterval:">- setResendInterval:</option>
+		
+		<option value="//api/name/setRestBearerEnabled">- setRestBearerEnabled</option>
+		
+		<option value="//api/name/setRetryCount:">- setRetryCount:</option>
+		
+		<option value="//api/name/setTTL:">- setTTL:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MeshServiceApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MeshServiceApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getDeviceHashFromUuid:" title="getDeviceHashFromUuid:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceHashFromUuid:">&ndash;&nbsp;getDeviceHashFromUuid:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getDeviceHashFromUuid. Convert the given CBUUID to a deviceHash.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)getDeviceHashFromUuid:(CBUUID *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><ul>
+<li>The CBUUID of the device</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSData * - The deviceHash in little endian format.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> - The uuid is converted to little Endian Format, the device hash is computed and this is also converted to little endian format before it is returned.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAuthorizationCode:" title="getAuthorizationCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAuthorizationCode:">&ndash;&nbsp;getAuthorizationCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getAuthorizationCode. Extract and return the Authorisation code from the given Short Code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)getAuthorizationCode:(NSString *)<em>shortCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shortCode</code></th>
+						<td><ul>
+<li>NSString object of the shortcode.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSData * - The authorisationCode or nil if the short code was invalid.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceHashFromShortCode:" title="getDeviceHashFromShortCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceHashFromShortCode:">&ndash;&nbsp;getDeviceHashFromShortCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getDeviceHashFromShortCode. Extract and return the device hash from the given Short Code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)getDeviceHashFromShortCode:(NSString *)<em>shortCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shortCode</code></th>
+						<td><ul>
+<li>NSString object of the shortcode.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSData * - The deviceHash or nil if the short code was invalid.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/associateDevice:authorisationCode:deviceId:success:progress:failure:" title="associateDevice:authorisationCode:deviceId:success:progress:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/associateDevice:authorisationCode:deviceId:success:progress:failure:">&ndash;&nbsp;associateDevice:authorisationCode:deviceId:success:progress:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>associateDevice. En-queues the given mesh device for Association. The requets is queued because only one device at a time is allowed to be in the association state. As this is an asynchronous process, the two delegates, isAssociatingDevice and didAssociateDevice are provided for feedback on the Associaiton progress.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)associateDevice:(NSData *)<em>deviceHash</em> authorisationCode:(NSData *)<em>authorisationCode</em> deviceId:(NSNumber *)<em>deviceId</em> success:(void ( ^ ) ( NSNumber *deviceId , NSData *deviceHash , NSNumber *meshRequestId ))<em>success</em> progress:(void ( ^ ) ( NSData *deviceHash , NSNumber *stepsCompleted , NSNumber *totalSteps , NSNumber *meshRequestId ))<em>progress</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceHash</code></th>
+						<td><ul>
+<li>NSData object of the deviceHash.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authorisationCode</code></th>
+						<td><ul>
+<li>NSData object of the Authorisation code. Note this is optional and must be set to nil if authorisation code is not provided.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>The deviceId to be assigned to the Associated device</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><ul>
+<li>Block called for each step of association that is successfuly completed</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSNumber - The id of the Api call. Will be returned by didTimeout or didAssociateDevice</p><p>meshRequestId - The id of the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/associateDevice:authorisationCode:" title="associateDevice:authorisationCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/associateDevice:authorisationCode:">&ndash;&nbsp;associateDevice:authorisationCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@deprecate associateDevice:(NSData <em>)deviceHash authorisationCode:(NSData </em>)authorisationCode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)associateDevice:(NSData *)<em>deviceHash</em> authorisationCode:(NSData *)<em>authorisationCode</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processMeshAdvert:RSSI:" title="processMeshAdvert:RSSI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processMeshAdvert:RSSI:">&ndash;&nbsp;processMeshAdvert:RSSI:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>processMeshAdvert. The given CSRmesh advertisment is decrypted and a value is returned that indicates how the CSRmesh Library processed the advert.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)processMeshAdvert:(NSDictionary *)<em>advertisment</em> RSSI:(NSNumber *)<em>RSSI</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>advertisment</code></th>
+						<td><ul>
+<li>(NSDictionary *) object of the advertisment scanned by the CBCentralManager.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>RSSI</code></th>
+						<td><ul>
+<li>(NSNumber *) object of the signal strength.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>(NSNumber *) - A value that can be interpreted as follows :-
+0 - Advertisment not related to CSRmesh
+1 - This is an advertisment from a Bridge Device
+2 - A valid CSRmesh advertisment from a CSRmesh device that was consumed by the CSRmesh Library</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setContinuousLeScanEnabled:" title="setContinuousLeScanEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setContinuousLeScanEnabled:">&ndash;&nbsp;setContinuousLeScanEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setContinuousLeScanEnabled. Continuous scan should be used to receive asynchronous data from a mesh device and should be used sparingly so as to preserve battery power.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setContinuousLeScanEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><ul>
+<li>(BOOL)
+YES = set continuous scan.
+NO = disable continuous scan.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectBridge:enableBridgeNotification:" title="connectBridge:enableBridgeNotification:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectBridge:enableBridgeNotification:">&ndash;&nbsp;connectBridge:enableBridgeNotification:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>connectBridge. After a connection is made to a Bridge Device, this method should be called so that the CSRmesh Library can use the Bridge to send data over the Mesh network.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectBridge:(CBPeripheral *)<em>bridge</em> enableBridgeNotification:(NSNumber *)<em>bridgeNotification</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bridge</code></th>
+						<td><ul>
+<li>(CBPeripheral *) The conected peripheral</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bridgeNotification</code></th>
+						<td><ul>
+<li>(NSNumber *) BleListenMode enum (CSR_SCAN_LISTEN_MODE, CSR_SCAN_NOTIFICATION_LISTEN_MODE, CSR_NOTIFICATION_LISTEN_MODE</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disconnectBridge:" title="disconnectBridge:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disconnectBridge:">&ndash;&nbsp;disconnectBridge:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>disconnectBridge. Inform the CSRmesh Library that the given bridge was disconnected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disconnectBridge:(CBPeripheral *)<em>bridge</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bridge</code></th>
+						<td><ul>
+<li>(CBPeripheral *) The conected peripheral</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDeviceDiscoveryFilterEnabled:uuid:appearance:" title="setDeviceDiscoveryFilterEnabled:uuid:appearance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceDiscoveryFilterEnabled:uuid:appearance:">&ndash;&nbsp;setDeviceDiscoveryFilterEnabled:uuid:appearance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setDeviceDiscoveryFilterEnabled. Commands the CSRmesh Library to inhibit or allow the discovery of new CSRmesh un-associated devices. If allowed, the delegate didDiscoverDevice shall be invoked for each device advertisment received from an unassociated device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDeviceDiscoveryFilterEnabled:(BOOL)<em>enabled</em> uuid:(void ( ^ ) ( CBUUID *uuid , NSNumber *rssi ))<em>uuid</em> appearance:(void ( ^ ) ( NSData *deviceHash , NSNumber *appearanceValue , NSData *shortName ))<em>appearance</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><ul>
+<li>(BOOL)
+YES = Allow
+NO = Inhibit</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><ul>
+<li>The block to execute when a CSRMeshDevice uuid is received</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appearance</code></th>
+						<td><ul>
+<li>The block to execute when a CSRMeshDevice appearance is received</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDeviceDiscoveryFilterEnabled:" title="setDeviceDiscoveryFilterEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceDiscoveryFilterEnabled:">&ndash;&nbsp;setDeviceDiscoveryFilterEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setDeviceDiscoveryFilterEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNetworkPassPhrase:" title="setNetworkPassPhrase:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNetworkPassPhrase:">&ndash;&nbsp;setNetworkPassPhrase:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setNetworkPassPhrase. Set the Network key that will be used when associating mesh devices. The network key for Devices already associated will not be changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNetworkPassPhrase:(NSString *)<em>passPhrase</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>passPhrase</code></th>
+						<td><ul>
+<li>(NSString *) The pass phrase that will be used to generate a netowrk key.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMeshId" title="getMeshId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMeshId">&ndash;&nbsp;getMeshId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getMeshId. Returns the MeshId for the PassPhrase most recently set by setNetworkPassPhrase. The MeshID is the HashMac of a secret Key and the PassPhrase</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getMeshId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNextDeviceId:" title="setNextDeviceId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNextDeviceId:">&ndash;&nbsp;setNextDeviceId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setNextDeviceId. Set the deviceId that will be assigned to the next associated device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNextDeviceId:(NSNumber *)<em>deviceId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) Unsigned short value</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> - care should be taken to avoid using the same deviceId for more than one device as this may corrupted messages received from the devices that share the same deviceId</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setControllerAddress:" title="setControllerAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setControllerAddress:">&ndash;&nbsp;setControllerAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setControllerAddress. Assign the given ID to the host.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setControllerAddress:(NSNumber *)<em>hostId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hostId</code></th>
+						<td><ul>
+<li>(NSNumber *) Unsigned short value (0000 - FFFF)</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> - care should be taken to avoid using the same hostId as the DeviceIds or GroupIds.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getControllerAddress" title="getControllerAddress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getControllerAddress">&ndash;&nbsp;getControllerAddress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getControllerAddress. Retrieves the ID of the host.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getControllerAddress</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSNumber of the Host ID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setResendInterval:" title="setResendInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setResendInterval:">&ndash;&nbsp;setResendInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setResendInterval. Set the mesh packet resend interval</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setResendInterval:(NSNumber *)<em>timeInterval</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeInterval</code></th>
+						<td><ul>
+<li>(NSNumber *) int milliseconds (maximum=60000)</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> - The new resend interval will always be set for the next command to be sent. Also as there is no persistence in the CSRmesh library, please set this value on App start up.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRetryCount:" title="setRetryCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRetryCount:">&ndash;&nbsp;setRetryCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setRetryCount. mesh packet retry count.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRetryCount:(NSNumber *)<em>retryCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retryCount</code></th>
+						<td><ul>
+<li>(NSNumber *) int retryCount</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> - The new Retry count will always be set for the Next Command to be sent. Also as there is no persistence in the CSRmesh library, please set this value on App start up.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAttentionPreAssociation:attentionState:withDuration:" title="setAttentionPreAssociation:attentionState:withDuration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAttentionPreAssociation:attentionState:withDuration:">&ndash;&nbsp;setAttentionPreAssociation:attentionState:withDuration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setAttentionPreAssociation. Attract attention on/off</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAttentionPreAssociation:(NSData *)<em>deviceHash</em> attentionState:(NSNumber *)<em>attentionState</em> withDuration:(NSNumber *)<em>duration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceHash</code></th>
+						<td><ul>
+<li>NSData. This is the lowest 31-bits of the SHA-256 of the DeviceUUID of New Device.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attentionState</code></th>
+						<td><ul>
+<li>NSNumber. This is an NSNumber containing the BOOL value of the desired state. YES=attract Attention</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><ul>
+<li>NSNumber. This is an NSNumber containing the 16-bit duration in milliseconds</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/killTransaction:" title="killTransaction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/killTransaction:">&ndash;&nbsp;killTransaction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>killTransaction. Abort an acknowledged mesh request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)killTransaction:(NSNumber *)<em>meshRequestId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meshRequestId</code></th>
+						<td><ul>
+<li>NSNumber meshReqeustId</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTTL:" title="setTTL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTTL:">&ndash;&nbsp;setTTL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>@brief setTTL. The timeto live is set to 255 by default. Use this method to set to another value</li>
+<li>@param ttl - unsigned char as an NSNumber of the new Time-To-Live vaue</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTTL:(NSNumber *)<em>ttl</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTTL" title="getTTL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTTL">&ndash;&nbsp;getTTL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getTTL. returns the timeto live value</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getTTL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRestBearerEnabled" title="setRestBearerEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRestBearerEnabled">&ndash;&nbsp;setRestBearerEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setRestBearerEnabled. Set bearer to REST/Cloud. Disables Bluetooth bearer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRestBearerEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBluetoothBearerEnabled" title="setBluetoothBearerEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBluetoothBearerEnabled">&ndash;&nbsp;setBluetoothBearerEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setBluetoothBearerEnabled. Set bearer to Bluetooth. Disables REST/Cloud bearer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBluetoothBearerEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getActiveBearer" title="getActiveBearer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getActiveBearer">&ndash;&nbsp;getActiveBearer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getActiveBearer. Get the active bearer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CSRBearerType)getActiveBearer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getApplicationCode" title="getApplicationCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getApplicationCode">&ndash;&nbsp;getApplicationCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getApplicationCode. Get the application code</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getApplicationCode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/meshServiceApiDelegate" title="meshServiceApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/meshServiceApiDelegate">&nbsp;&nbsp;meshServiceApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property meshServiceApiDelegate - The delegate for this object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;MeshServiceApiDelegate&gt; meshServiceApiDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/centralManager" title="centralManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/centralManager">&nbsp;&nbsp;centralManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property centralManager - The id of the CBCentralManager object. This makes it possible for the library to control the state of the Scanner.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CBCentralManager *centralManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/meshId" title="meshId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/meshId">&nbsp;&nbsp;meshId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property meshID - The HashMac of the PassPhrase. The initial value is @&ldquo; &rdquo;. The meshId is re-computed after a call to setNetworkPassPhrase. If a new PassPhrase is set then also send the meshId to the Gateway.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *meshId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

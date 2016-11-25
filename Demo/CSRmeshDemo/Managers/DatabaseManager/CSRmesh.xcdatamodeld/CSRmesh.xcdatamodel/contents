@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Xcode 4.3">
+    <entity name="CSRAreaEntity" representedClassName="CSRAreaEntity" syncable="YES">
+        <attribute name="areaID" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSRDeviceEntity" inverseName="areas" inverseEntity="CSRDeviceEntity" syncable="YES"/>
+    </entity>
+    <entity name="CSRDeviceEntity" representedClassName="CSRDeviceEntity" syncable="YES">
+        <attribute name="appearance" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="authCode" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="deviceHash" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="deviceId" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="groups" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isAssociated" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="modelHigh" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="modelLow" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nGroups" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="areas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSRAreaEntity" inverseName="devices" inverseEntity="CSRAreaEntity" syncable="YES"/>
+    </entity>
+    <entity name="CSRGatewayEntity" representedClassName="CSRGatewayEntity" syncable="YES">
+        <attribute name="basePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="host" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="port" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CSRPlaceEntity" representedClassName="CSRPlaceEntity" syncable="YES">
+        <attribute name="cloudSiteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hostControllerID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="iconID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="networkKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="areas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSRAreaEntity" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSRDeviceEntity" syncable="YES"/>
+        <relationship name="gateways" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSRGatewayEntity" syncable="YES"/>
+        <relationship name="settings" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CSRSettingsEntity" syncable="YES"/>
+    </entity>
+    <entity name="CSRSettingsEntity" representedClassName="CSRSettingsEntity" syncable="YES">
+        <attribute name="cloudMeshID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cloudTenancyID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="concurrentConnections" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="listeningMode" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="retryCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="retryInterval" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="siteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CSRPlaceEntity" inverseName="settings" inverseEntity="CSRPlaceEntity" syncable="YES"/>
+    </entity>
+    <entity name="CSRUserEntity" representedClassName="CSRUserEntity" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="places" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSRPlaceEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CSRAreaEntity" positionX="81" positionY="-207" width="128" height="103"/>
+        <element name="CSRDeviceEntity" positionX="61" positionY="153" width="128" height="238"/>
+        <element name="CSRGatewayEntity" positionX="-191" positionY="269" width="128" height="150"/>
+        <element name="CSRPlaceEntity" positionX="-117" positionY="-72" width="128" height="208"/>
+        <element name="CSRSettingsEntity" positionX="-317" positionY="27" width="128" height="163"/>
+        <element name="CSRUserEntity" positionX="-308" positionY="-279" width="128" height="118"/>
+    </elements>
+</model>

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>LightModelApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/lightModelApiDelegate">lightModelApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getState:">- getState:</option>
+		
+		<option value="//api/name/getState:success:failure:">- getState:success:failure:</option>
+		
+		<option value="//api/name/setColor:color:duration:success:failure:">- setColor:color:duration:success:failure:</option>
+		
+		<option value="//api/name/setColorTemperature:temperature:duration:">- setColorTemperature:temperature:duration:</option>
+		
+		<option value="//api/name/setColorTemperature:temperature:duration:success:failure:">- setColorTemperature:temperature:duration:success:failure:</option>
+		
+		<option value="//api/name/setLevel:level:acknowledged:">- setLevel:level:acknowledged:</option>
+		
+		<option value="//api/name/setLevel:level:success:failure:">- setLevel:level:success:failure:</option>
+		
+		<option value="//api/name/setPowerLevel:powerState:level:levelDuration:sustain:decay:success:failure:">- setPowerLevel:powerState:level:levelDuration:sustain:decay:success:failure:</option>
+		
+		<option value="//api/name/setRgb:red:green:blue:level:duration:acknowledged:">- setRgb:red:green:blue:level:duration:acknowledged:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">LightModelApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>LightModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getState:success:failure:" title="getState:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getState:success:failure:">&ndash;&nbsp;getState:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getState - Request the light state. The callback didGetLightState is invoked upon success. The <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked on failure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getState:(NSNumber *)<em>deviceId</em> success:(void ( ^ ) ( NSNumber *deviceId , UIColor *color , NSNumber *powerState , NSNumber *colorTemperature , NSNumber *supports ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetLightState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LightModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getState:" title="getState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getState:">&ndash;&nbsp;getState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getState:(NSNumber *)<em>deviceId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setColorTemperature:temperature:duration:success:failure:" title="setColorTemperature:temperature:duration:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setColorTemperature:temperature:duration:success:failure:">&ndash;&nbsp;setColorTemperature:temperature:duration:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setColorTemperature - Set the colour temperature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setColorTemperature:(NSNumber *)<em>deviceId</em> temperature:(NSNumber *)<em>temperature</em> duration:(NSNumber *)<em>duration</em> success:(void ( ^ ) ( NSNumber *deviceId , UIColor *color , NSNumber *powerState , NSNumber *colorTemperature , NSNumber *supports ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>temperature</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned char wrapped in an NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned 16-bit wrapped in NSNumber and represents time in millieseconds over which the temperature will fade.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetLightState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LightModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setColorTemperature:temperature:duration:" title="setColorTemperature:temperature:duration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setColorTemperature:temperature:duration:">&ndash;&nbsp;setColorTemperature:temperature:duration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setColorTemperature:(NSNumber *)<em>deviceId</em> temperature:(NSNumber *)<em>temperature</em> duration:(NSNumber *)<em>duration</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setColor:color:duration:success:failure:" title="setColor:color:duration:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setColor:color:duration:success:failure:">&ndash;&nbsp;setColor:color:duration:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setRgb - Set the colour.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setColor:(NSNumber *)<em>deviceId</em> color:(UIColor *)<em>color</em> duration:(NSNumber *)<em>duration</em> success:(void ( ^ ) ( NSNumber *deviceId , UIColor *color , NSNumber *powerState , NSNumber *colorTemperature , NSNumber *supports ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><ul>
+<li>(UIColor *) Light color. The alpha value is level.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned 16-bit wrapped in NSNumber and represents time in millieseconds over which the temperature will fade.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution, set nil to inhibit acknowledgement</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetLightState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LightModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRgb:red:green:blue:level:duration:acknowledged:" title="setRgb:red:green:blue:level:duration:acknowledged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRgb:red:green:blue:level:duration:acknowledged:">&ndash;&nbsp;setRgb:red:green:blue:level:duration:acknowledged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setRgb:(NSNumber *)<em>deviceId</em> red:(NSNumber *)<em>red</em> green:(NSNumber *)<em>green</em> blue:(NSNumber *)<em>blue</em> level:(NSNumber *)<em>level</em> duration:(NSNumber *)<em>duration</em> acknowledged:(BOOL)<em>acknowledged</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPowerLevel:powerState:level:levelDuration:sustain:decay:success:failure:" title="setPowerLevel:powerState:level:levelDuration:sustain:decay:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPowerLevel:powerState:level:levelDuration:sustain:decay:success:failure:">&ndash;&nbsp;setPowerLevel:powerState:level:levelDuration:sustain:decay:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setPowerLevel - Set power state and then move the power level to the given value over the given duration</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setPowerLevel:(NSNumber *)<em>deviceId</em> powerState:(NSNumber *)<em>powerState</em> level:(NSNumber *)<em>level</em> levelDuration:(NSNumber *)<em>levelDuration</em> sustain:(NSNumber *)<em>sustain</em> decay:(NSNumber *)<em>decay</em> success:(void ( ^ ) ( NSNumber *deviceId , UIColor *color , NSNumber *powerState , NSNumber *colorTemperature , NSNumber *supports ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned char of the power level</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>levelDuration</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned short of the fade time, in mS</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sustain</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned short of the wait before fade time, in mS</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>decay</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned short of the time for the light to decay to 0, in mS</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution, set nil to inhibit acknowledgement</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>powesrState</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned char of the power state</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetLightState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LightModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLevel:level:success:failure:" title="setLevel:level:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLevel:level:success:failure:">&ndash;&nbsp;setLevel:level:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setLevel - Set the Intensity.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setLevel:(NSNumber *)<em>deviceId</em> level:(NSNumber *)<em>level</em> success:(void ( ^ ) ( NSNumber *deviceId , UIColor *color , NSNumber *powerState , NSNumber *colorTemperature , NSNumber *supports ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><ul>
+<li>(NSNumber *) unsigned char wrapped in an NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution, set nil to inhibit acknowledgement</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetLightState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LightModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLevel:level:acknowledged:" title="setLevel:level:acknowledged:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLevel:level:acknowledged:">&ndash;&nbsp;setLevel:level:acknowledged:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setLevel:(NSNumber *)<em>deviceId</em> level:(NSNumber *)<em>level</em> acknowledged:(BOOL)<em>acknowledged</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lightModelApiDelegate" title="lightModelApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lightModelApiDelegate">&nbsp;&nbsp;lightModelApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;LightModelApiDelegate&gt; lightModelApiDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

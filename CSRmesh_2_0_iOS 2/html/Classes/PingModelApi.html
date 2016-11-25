@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PingModelApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/pingModelApiDelegate">pingModelApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/ping:data:rspTTL:">- ping:data:rspTTL:</option>
+		
+		<option value="//api/name/ping:data:rspTTL:success:failure:">- ping:data:rspTTL:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PingModelApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PingModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ping:data:rspTTL:success:failure:" title="ping:data:rspTTL:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ping:data:rspTTL:success:failure:">&ndash;&nbsp;ping:data:rspTTL:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ping - ping the device with some data. The callback didPing is invoked upon success. The <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked on failure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)ping:(NSNumber *)<em>deviceId</em> data:(NSData *)<em>data</em> rspTTL:(NSNumber *)<em>rspTTL</em> success:(void ( ^ ) ( NSNumber *deviceId , NSData *arbitaryData , NSNumber *TTLAtRx , NSNumber *RSSIAtRx ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><ul>
+<li>(NSData *) Data, up to 250 octets.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rspTTL</code></th>
+						<td><ul>
+<li>(NSNumber *) 1 octet wrapped in NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution.
+arbitaryData - (NSData <em>) data received, 4 octets.
+TTLAtRx - (NSNumber </em>) Time to Live, TTL, value at device, 1 octet
+RSSIAtRx - (NSNumber *) RSSI of received signal at device, 1 octet</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetPowerState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PingModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ping:data:rspTTL:" title="ping:data:rspTTL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ping:data:rspTTL:">&ndash;&nbsp;ping:data:rspTTL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)ping:(NSNumber *)<em>deviceId</em> data:(NSData *)<em>data</em> rspTTL:(NSNumber *)<em>rspTTL</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pingModelApiDelegate" title="pingModelApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pingModelApiDelegate">&nbsp;&nbsp;pingModelApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PingModelApiDelegate&gt; pingModelApiDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

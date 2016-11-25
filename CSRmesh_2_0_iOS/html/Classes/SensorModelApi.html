@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SensorModelApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/sensorModelApiDelegate">sensorModelApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getState:sensorType:">- getState:sensorType:</option>
+		
+		<option value="//api/name/getState:sensorType:success:failure:">- getState:sensorType:success:failure:</option>
+		
+		<option value="//api/name/getTypes:firstType:">- getTypes:firstType:</option>
+		
+		<option value="//api/name/getTypes:firstType:success:failure:">- getTypes:firstType:success:failure:</option>
+		
+		<option value="//api/name/getValue:sensorType1:sensorType2:">- getValue:sensorType1:sensorType2:</option>
+		
+		<option value="//api/name/getValue:sensorType1:sensorType2:success:failure:">- getValue:sensorType1:sensorType2:success:failure:</option>
+		
+		<option value="//api/name/setState:sensorType:repeatInterval:">- setState:sensorType:repeatInterval:</option>
+		
+		<option value="//api/name/setState:sensorType:repeatInterval:success:failure:">- setState:sensorType:repeatInterval:success:failure:</option>
+		
+		<option value="//api/name/setValue:sensors:acknowledge:">- setValue:sensors:acknowledge:</option>
+		
+		<option value="//api/name/setValue:sensors:acknowledge:success:failure:">- setValue:sensors:acknowledge:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SensorModelApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SensorModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getTypes:firstType:success:failure:" title="getTypes:firstType:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTypes:firstType:success:failure:">&ndash;&nbsp;getTypes:firstType:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getTypes - request the Sensor Types that follow from the given sensor. Upon a successful transaction the success code block is executed with the parameters (NSNumber <em>deviceId, NSArray </em>sensorTypes) and the callback didGetSensorTypes is invoked. Upon a failed transaction the failure code block is executed and the callback <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getTypes:(NSNumber *)<em>deviceId</em> firstType:(NSNumber *)<em>firstType</em> success:(void ( ^ ) ( NSNumber *deviceId , NSArray *sensorTypes ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>firstType</code></th>
+						<td><ul>
+<li>(NSNumber *) The first sensor type as an unsigned short.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution. (NSNumber <em>deviceId, NSArray </em>sensorTypes)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetPowerState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SensorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTypes:firstType:" title="getTypes:firstType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTypes:firstType:">&ndash;&nbsp;getTypes:firstType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getTypes:(NSNumber *)<em>deviceId</em> firstType:(NSNumber *)<em>firstType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setState:sensorType:repeatInterval:success:failure:" title="setState:sensorType:repeatInterval:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setState:sensorType:repeatInterval:success:failure:">&ndash;&nbsp;setState:sensorType:repeatInterval:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setState - Set the given sensor to the given state. Upon a successful transaction the success code block is executes with the parameters (NSNumber <em>deviceId, NSNumber </em>sensorType, NSNumber *repeatInterval) and the callback didGetSensorState is invoked. Upon a failed transaction the failure code block is executed and the callback <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setState:(NSNumber *)<em>deviceId</em> sensorType:(NSNumber *)<em>sensorType</em> repeatInterval:(NSNumber *)<em>repeatInterval</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *sensorType , NSNumber *repeatInterval ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorType</code></th>
+						<td><ul>
+<li>(NSNumber *) The sensor type as an unsigned short.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>repeatInterval</code></th>
+						<td><ul>
+<li>(NSNumber *) The sensor repeat interval state as an unsigned char.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution. (NSNumber <em>deviceId, NSNumber </em>sensorType, NSNumber *repeatInterval)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetPowerState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SensorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setState:sensorType:repeatInterval:" title="setState:sensorType:repeatInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setState:sensorType:repeatInterval:">&ndash;&nbsp;setState:sensorType:repeatInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setState:(NSNumber *)<em>deviceId</em> sensorType:(NSNumber *)<em>sensorType</em> repeatInterval:(NSNumber *)<em>repeatInterval</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getState:sensorType:success:failure:" title="getState:sensorType:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getState:sensorType:success:failure:">&ndash;&nbsp;getState:sensorType:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getState - Get the state for the given sensor. The success code block is executed upon a successful transaction and the the callback didSetSensorState is invoked. The failure code block is executed upon an unsuccessful transaction and the callback<a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getState:(NSNumber *)<em>deviceId</em> sensorType:(NSNumber *)<em>sensorType</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *sensorType , NSNumber *repeatInterval ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorType</code></th>
+						<td><ul>
+<li>(NSNumber *) The sensor type as an unsigned short wrapped up in an NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Upon a successful transaction, this code block is executed with the parameters (NSNumber <em>deviceId, NSNumber </em>sensorType, NSNumber *repeatInterval)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetPowerState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SensorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getState:sensorType:" title="getState:sensorType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getState:sensorType:">&ndash;&nbsp;getState:sensorType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getState:(NSNumber *)<em>deviceId</em> sensorType:(NSNumber *)<em>sensorType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setValue:sensors:acknowledge:success:failure:" title="setValue:sensors:acknowledge:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setValue:sensors:acknowledge:success:failure:">&ndash;&nbsp;setValue:sensors:acknowledge:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setValue - Write the given value to the given sensor. Up to two sensors can be written in one command. If success is not nil then the meshRequestId will be returned, otherwise nil will be returned. If success code block is not nil then it will be executed upon a successful transaction and the callback didGetSensorValue will be invoked. If the transaction fails then the failure code block is executed. If the success parameter is nil then CSRmesh acknowledgement will be supressed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setValue:(NSNumber *)<em>deviceId</em> sensors:(NSDictionary *)<em>sensors</em> acknowledge:(NSNumber *)<em>ack</em> success:(void ( ^ ) ( NSNumber *deviceId , NSDictionary *sensors ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensors</code></th>
+						<td><ul>
+<li>(NSDictionary) - The key is the NSNumber of the sensor Type as an unsigned short and the Value is the NSNumber of the sensor value of size one to four octets.
+Temperature value should be in Kelvin and of type float wrapped in an NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Upon a successful transaction the success code block will be executed with the parameters (NSNumber <em>deviceId, NSDictionary </em>sensors)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetPowerState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SensorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setValue:sensors:acknowledge:" title="setValue:sensors:acknowledge:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setValue:sensors:acknowledge:">&ndash;&nbsp;setValue:sensors:acknowledge:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setValue:(NSNumber *)<em>deviceId</em> sensors:(NSDictionary *)<em>sensors</em> acknowledge:(NSNumber *)<em>ack</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getValue:sensorType1:sensorType2:success:failure:" title="getValue:sensorType1:sensorType2:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getValue:sensorType1:sensorType2:success:failure:">&ndash;&nbsp;getValue:sensorType1:sensorType2:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getValue - Read the value for the given sensor(s). A read request for up to two sensors can be made in one command. Upon a successful transaction the success code block will be executed and the callback didGetSensorValue will be invoked. If the transaction is unsuccessful the failure code block will be executed and the callback <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage will be invoked.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getValue:(NSNumber *)<em>deviceId</em> sensorType1:(NSNumber *)<em>sensorType1</em> sensorType2:(NSNumber *)<em>sensorType2</em> success:(void ( ^ ) ( NSNumber *deviceId , NSDictionary *sensors ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorType1</code></th>
+						<td><ul>
+<li>(NSNumber *) The first sensor type as an unsigned short wrapped up in an NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorType2</code></th>
+						<td><ul>
+<li>(NSNumber *) The second sensor type as an unsigned short wrapped up in an NSNumber. This is optional and may be nil.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Code block executed upon a successful transaction. The success code block parameters are (NSNumber <em>deviceId, NSDictionary </em>sensors)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Code block executed upon an unsuccessful transaction.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetPowerState.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SensorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getValue:sensorType1:sensorType2:" title="getValue:sensorType1:sensorType2:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getValue:sensorType1:sensorType2:">&ndash;&nbsp;getValue:sensorType1:sensorType2:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getValue:(NSNumber *)<em>deviceId</em> sensorType1:(NSNumber *)<em>sensorType1</em> sensorType2:(NSNumber *)<em>sensorType2</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sensorModelApiDelegate" title="sensorModelApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sensorModelApiDelegate">&nbsp;&nbsp;sensorModelApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;SensorModelApiDelegate&gt; sensorModelApiDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

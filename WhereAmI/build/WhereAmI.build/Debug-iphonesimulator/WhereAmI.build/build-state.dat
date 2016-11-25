@@ -1,0 +1,652 @@
+TWhereAmI
+v7
+r0
+t336326989.788852
+cCheck dependencies
+cProcessInfoPlistFile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/Info.plist WhereAmI-Info.plist
+cCompileXIB /Users/tony/Desktop/WhereAmI/FlipsideView.xib
+cCompileXIB /Users/tony/Desktop/WhereAmI/MainView.xib
+cCompileXIB /Users/tony/Desktop/WhereAmI/MainWindow.xib
+cProcessPCH /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch.gch WhereAmI_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o /Users/tony/Desktop/WhereAmI/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o /Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o /Users/tony/Desktop/WhereAmI/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o /Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI normal i386
+cGenerateDSYMFile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app.dSYM /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+cTouch /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004CC127E80000000000074190
+t1287727080
+s475536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h
+c000000004CC127DD0000000000000C73
+t1287727069
+s3187
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004CC127DD00000000000001D0
+t1287727069
+s464
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.h
+c000000004E5B08EE000000000000022A
+t1314588910
+s554
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m
+c000000004E5B08EE000000000000044F
+t1314588910
+s1103
+i"FlipsideViewController.h"
+
+N/Users/tony/Desktop/WhereAmI/Classes/MainViewController.h
+c000000004E5B9B09000000000000035A
+t1314626313
+s858
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<CoreLocation/CLLocationManagerDelegate.h>
+i"FlipsideViewController.h"
+
+N/Users/tony/Desktop/WhereAmI/Classes/MainViewController.m
+c000000004E5BA46F0000000000000AE5
+t1314628719
+s2789
+i"MainViewController.h"
+
+N/Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.h
+c000000004E5B08EE00000000000001D9
+t1314588910
+s473
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m
+c000000004E5B08EE0000000000000AA1
+t1314588910
+s2721
+i"WhereAmIAppDelegate.h"
+i"MainViewController.h"
+
+N/Users/tony/Desktop/WhereAmI/FlipsideView.xib
+c000000004E5BB9B800000000000061C1
+t1314634168
+s25025
+
+N/Users/tony/Desktop/WhereAmI/MainView.xib
+c000000004E5B88DB0000000000007E5C
+t1314621659
+s32348
+
+N/Users/tony/Desktop/WhereAmI/MainWindow.xib
+c000000004E5B08EE000000000000509C
+t1314588910
+s20636
+
+N/Users/tony/Desktop/WhereAmI/WhereAmI_Prefix.pch
+c000000004E5B08EE0000000000000142
+t1314588910
+s322
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app
+t1314634189
+s272
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app.dSYM
+t1314633015
+s102
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/FlipsideView.nib
+t1314634189
+s2304
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/Info.plist
+t1314589472
+s595
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/MainView.nib
+t1314621664
+s2925
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/MainWindow.nib
+t1314589472
+s1150
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/PkgInfo
+t1314589472
+s8
+
+N/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+t1314633015
+s25684
+
+N/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o
+t1314589474
+s40820
+
+N/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o
+t1314633015
+s58464
+
+N/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmI.LinkFileList
+c000000004E5B0B2000000000000001F7
+t1314589472
+s503
+
+N/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o
+t1314626313
+s51348
+
+N/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o
+t1314589474
+s6284
+
+N/Users/tony/Desktop/WhereAmI/main.m
+c000000004E5B08EE0000000000000162
+t1314588910
+s354
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/FlipsideViewController.h
+c000000004E5B08EE000000000000022A
+t1314588910
+s554
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/FlipsideViewController.m
+c000000004E5B08EE000000000000044F
+t1314588910
+s1103
+i"FlipsideViewController.h"
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/MainViewController.h
+c000000004E5B9B09000000000000035A
+t1314626313
+s858
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<CoreLocation/CLLocationManagerDelegate.h>
+i"FlipsideViewController.h"
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/MainViewController.m
+c000000004E5BA46F0000000000000AE5
+t1314628719
+s2789
+i"MainViewController.h"
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/WhereAmIAppDelegate.h
+c000000004E5B08EE00000000000001D9
+t1314588910
+s473
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/WhereAmIAppDelegate.m
+c000000004E5B08EE0000000000000AA1
+t1314588910
+s2721
+i"WhereAmIAppDelegate.h"
+i"MainViewController.h"
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/FlipsideView.xib
+c000000004E5BB9B800000000000061C1
+t1314634168
+s25025
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/MainView.xib
+c000000004E5B88DB0000000000007E5C
+t1314621659
+s32348
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/MainWindow.xib
+c000000004E5B08EE000000000000509C
+t1314588910
+s20636
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/WhereAmI_Prefix.pch
+c000000004E5B08EE0000000000000142
+t1314588910
+s322
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app
+t1314634189
+s272
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app.dSYM
+t1314633015
+s102
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/FlipsideView.nib
+t1314634189
+s2304
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/Info.plist
+t1314589472
+s595
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/MainView.nib
+t1314621664
+s2925
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/MainWindow.nib
+t1314589472
+s1150
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/PkgInfo
+t1314589472
+s8
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+t1314633015
+s25684
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o
+t1314589474
+s40820
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o
+t1314633015
+s58464
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmI.LinkFileList
+c000000004E5B0B2000000000000001F7
+t1314589472
+s503
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o
+t1314626313
+s51348
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o
+t1314589474
+s6284
+
+N/Users/tony/Desktop/iOS案例分析/WhereAmI（update）/main.m
+c000000004E5B08EE0000000000000162
+t1314588910
+s354
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/FlipsideViewController.h
+c000000004E5B08EE000000000000022A
+t1314588910
+s554
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/FlipsideViewController.m
+c000000004E5B08EE000000000000044F
+t1314588910
+s1103
+i"FlipsideViewController.h"
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/MainViewController.h
+c000000004E5B9B09000000000000035A
+t1314626313
+s858
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<CoreLocation/CLLocationManagerDelegate.h>
+i"FlipsideViewController.h"
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/MainViewController.m
+c000000004E5BA46F0000000000000AE5
+t1314628719
+s2789
+i"MainViewController.h"
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/WhereAmIAppDelegate.h
+c000000004E5B08EE00000000000001D9
+t1314588910
+s473
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/WhereAmIAppDelegate.m
+c000000004E5B08EE0000000000000AA1
+t1314588910
+s2721
+i"WhereAmIAppDelegate.h"
+i"MainViewController.h"
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/FlipsideView.xib
+c000000004E5BB9B800000000000061C1
+t1314634168
+s25025
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/MainView.xib
+c000000004E5B88DB0000000000007E5C
+t1314621659
+s32348
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/MainWindow.xib
+c000000004E5B08EE000000000000509C
+t1314588910
+s20636
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/WhereAmI_Prefix.pch
+c000000004E5B08EE0000000000000142
+t1314588910
+s322
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app
+t1314634189
+s272
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app.dSYM
+t1314633015
+s102
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/FlipsideView.nib
+t1314634189
+s2304
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/Info.plist
+t1314589472
+s595
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/MainView.nib
+t1314621664
+s2925
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/MainWindow.nib
+t1314589472
+s1150
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/PkgInfo
+t1314589472
+s8
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+t1314633015
+s25684
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o
+t1314589474
+s40820
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o
+t1314633015
+s58464
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmI.LinkFileList
+c000000004E5B0B2000000000000001F7
+t1314589472
+s503
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o
+t1314626313
+s51348
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o
+t1314589474
+s6284
+
+N/Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/main.m
+c000000004E5B08EE0000000000000162
+t1314588910
+s354
+i<UIKit/UIKit.h>
+
+N/var/folders/Zs/Zsc285YQFOWdKwsV8NjkiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-feimoyypzqaairbwaykdghqkqkil/WhereAmI_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-cyeuvgnmfppimyhbzudeyrrizuvw/WhereAmI_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch.gch
+t1314589474
+s15453392
+
+NWhereAmI-Info.plist
+c000000004E5B08EE000000000000038D
+t1314588910
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies336326989#336326989#0(0"0(0#1#0"8638248448#0"0#
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o /Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s336282274.284346
+e336282274.442068
+r1
+xCompileC
+xbuild/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o
+x/Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m336282274#336282274#0(0"0(0#0#61"/Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m8602764160#1868"    cd /Users/tony/Desktop/WhereAmI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-generated-files.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-own-target-headers.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-all-target-headers.hmap -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-project-headers.hmap -F/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -I/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/include -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources/i386 -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources -include /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch -c /Users/tony/Desktop/WhereAmI/Classes/FlipsideViewController.m -o /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o0#
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/FlipsideViewController.o /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o /Users/tony/Desktop/WhereAmI/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s336325814.365494
+e336325815.110533
+r1
+xCompileC
+xbuild/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o
+x/Users/tony/Desktop/WhereAmI/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/tony/Desktop/WhereAmI/Classes/MainViewController.m336325814#336325815#0(0"0(0#0#57"/Users/tony/Desktop/WhereAmI/Classes/MainViewController.m8642551712#1860"    cd /Users/tony/Desktop/WhereAmI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-generated-files.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-own-target-headers.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-all-target-headers.hmap -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-project-headers.hmap -F/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -I/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/include -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources/i386 -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources -include /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch -c /Users/tony/Desktop/WhereAmI/Classes/MainViewController.m -o /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o0#
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/MainViewController.o /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o /Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s336319113.375254
+e336319113.476191
+r1
+xCompileC
+xbuild/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o
+x/Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m336319113#336319113#0(0"0(0#0#58"/Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m8639778816#1862"    cd /Users/tony/Desktop/WhereAmI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-generated-files.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-own-target-headers.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-all-target-headers.hmap -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-project-headers.hmap -F/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -I/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/include -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources/i386 -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources -include /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch -c /Users/tony/Desktop/WhereAmI/Classes/WhereAmIAppDelegate.m -o /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o0#
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/Classes/WhereAmIAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmIAppDelegate.o /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/Classes/WhereAmIAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o /Users/tony/Desktop/WhereAmI/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s336282274.280219
+e336282274.428961
+r1
+xCompileC
+xbuild/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o
+x/Users/tony/Desktop/WhereAmI/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@43"Compile /Users/tony/Desktop/WhereAmI/main.m336282274#336282274#0(0"0(0#0#35"/Users/tony/Desktop/WhereAmI/main.m8600758752#1824"    cd /Users/tony/Desktop/WhereAmI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-generated-files.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-own-target-headers.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-all-target-headers.hmap -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-project-headers.hmap -F/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -I/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/include -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources/i386 -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources -include /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch -c /Users/tony/Desktop/WhereAmI/main.m -o /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o0#
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/main.o /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/tony/Desktop/WhereAmI/FlipsideView.xib
+s336326989.223897
+e336326989.784078
+r1
+xCompileXIB
+x/Users/tony/Desktop/WhereAmI/FlipsideView.xib
+lSLF07#2@27"CompileXIB FlipsideView.xib336326989#336326989#0(0"0(0#0#45"/Users/tony/Desktop/WhereAmI/FlipsideView.xib8627752640#545"    cd /Users/tony/Desktop/WhereAmI    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/FlipsideView.nib /Users/tony/Desktop/WhereAmI/FlipsideView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/tony/Desktop/WhereAmI/MainView.xib
+s336314464.492963
+e336314464.963916
+r1
+xCompileXIB
+x/Users/tony/Desktop/WhereAmI/MainView.xib
+lSLF07#2@23"CompileXIB MainView.xib336314464#336314464#0(0"0(0#0#41"/Users/tony/Desktop/WhereAmI/MainView.xib8612092032#537"    cd /Users/tony/Desktop/WhereAmI    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/MainView.nib /Users/tony/Desktop/WhereAmI/MainView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/tony/Desktop/WhereAmI/MainWindow.xib
+s336282272.608747
+e336282273.243834
+r1
+xCompileXIB
+x/Users/tony/Desktop/WhereAmI/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib336282272#336282273#0(0"0(0#0#43"/Users/tony/Desktop/WhereAmI/MainWindow.xib8602400608#541"    cd /Users/tony/Desktop/WhereAmI    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/MainWindow.nib /Users/tony/Desktop/WhereAmI/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/FlipsideView.xib
+r0
+
+CCompileXIB /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/MainView.xib
+r0
+
+CCompileXIB /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/MainWindow.xib
+r0
+
+CCompileXIB /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/FlipsideView.xib
+r0
+
+CCompileXIB /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/MainView.xib
+r0
+
+CCompileXIB /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/MainWindow.xib
+r0
+
+CGenerateDSYMFile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app.dSYM /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+s336325815.316380
+e336325815.879317
+r1
+xGenerateDSYMFile
+x/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app.dSYM
+x/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/WhereAmI.app.dSYM build/Debug-iphonesimulator/WhereAmI.app/WhereAmI336325815#336325815#0(0"0(0#0#78"/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI8639594304#356"    cd /Users/tony/Desktop/WhereAmI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI -o /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app.dSYM0#
+
+CGenerateDSYMFile /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app.dSYM /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+r0
+
+CGenerateDSYMFile /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app.dSYM /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+r0
+
+CLd /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI normal i386
+s336325815.110659
+e336325815.316244
+r1
+xLd
+x/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI
+xnormal
+xi386
+lSLF07#2@83"Link /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI336325815#336325815#0(0"0(0#0#0"8641996992#879"    cd /Users/tony/Desktop/WhereAmI    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -F/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -filelist /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/Objects-normal/i386/WhereAmI.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreLocation -o /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI0#
+
+CLd /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI normal i386
+r0
+
+CLd /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/WhereAmI normal i386
+r0
+
+CProcessInfoPlistFile /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/Info.plist WhereAmI-Info.plist
+s336282272.282493
+e336282272.606406
+r1
+xProcessInfoPlistFile
+x/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/Info.plist
+xWhereAmI-Info.plist
+lSLF07#2@27"Process WhereAmI-Info.plist336282272#336282272#0(0"0(0#0#48"/Users/tony/Desktop/WhereAmI/WhereAmI-Info.plist18296307285360740#452"    cd /Users/tony/Desktop/WhereAmI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility WhereAmI-Info.plist -genpkginfo /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app/Info.plist WhereAmI-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app/Info.plist WhereAmI-Info.plist
+r0
+
+CProcessPCH /var/folders/Zs/Zsc285YQFOWdKwsV8NjkiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-feimoyypzqaairbwaykdghqkqkil/WhereAmI_Prefix.pch.gch WhereAmI_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-cyeuvgnmfppimyhbzudeyrrizuvw/WhereAmI_Prefix.pch.gch WhereAmI_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch.gch WhereAmI_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s336282273.244107
+e336282274.279946
+r1
+xProcessPCH
+x/var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch.gch
+xWhereAmI_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile WhereAmI_Prefix.pch336282273#336282274#0(0"0(0#0#48"/Users/tony/Desktop/WhereAmI/WhereAmI_Prefix.pch8604174400#1725"    cd /Users/tony/Desktop/WhereAmI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-generated-files.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-own-target-headers.hmap -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-all-target-headers.hmap -iquote /Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/WhereAmI-project-headers.hmap -F/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator -I/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/include -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources/i386 -I/Users/tony/Desktop/WhereAmI/build/WhereAmI.build/Debug-iphonesimulator/WhereAmI.build/DerivedSources -c /Users/tony/Desktop/WhereAmI/WhereAmI_Prefix.pch -o /var/folders/s9/s9U+Vp-ZGCWLDIhSkLYGWk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhereAmI_Prefix-dilmrjxfvqrcwigwqogjzmnezevt/WhereAmI_Prefix.pch.gch0#
+
+CTouch /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app
+s336326989.785001
+e336326989.788664
+r1
+xTouch
+x/Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app
+lSLF07#2@75"Touch /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app336326989#336326989#0(0"0(0#0#0"8638253600#259"    cd /Users/tony/Desktop/WhereAmI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/tony/Desktop/WhereAmI/build/Debug-iphonesimulator/WhereAmI.app0#
+
+CTouch /Users/tony/Desktop/iOS案例分析/WhereAmI（update）/build/Debug-iphonesimulator/WhereAmI.app
+r0
+
+CTouch /Users/tony/Desktop/新建文件夹/代码/07/WhereAmI（update-1）/build/Debug-iphonesimulator/WhereAmI.app
+r0
+

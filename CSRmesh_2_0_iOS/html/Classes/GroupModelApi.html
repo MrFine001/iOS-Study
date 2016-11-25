@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GroupModelApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/groupModelApiDelegate">groupModelApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getModelGroupId:modelNo:groupIndex:">- getModelGroupId:modelNo:groupIndex:</option>
+		
+		<option value="//api/name/getModelGroupId:modelNo:groupIndex:success:failure:">- getModelGroupId:modelNo:groupIndex:success:failure:</option>
+		
+		<option value="//api/name/getNumModelGroupIds:modelNo:">- getNumModelGroupIds:modelNo:</option>
+		
+		<option value="//api/name/getNumModelGroupIds:modelNo:success:failure:">- getNumModelGroupIds:modelNo:success:failure:</option>
+		
+		<option value="//api/name/setModelGroupId:modelNo:groupIndex:instance:groupId:">- setModelGroupId:modelNo:groupIndex:instance:groupId:</option>
+		
+		<option value="//api/name/setModelGroupId:modelNo:groupIndex:instance:groupId:success:failure:">- setModelGroupId:modelNo:groupIndex:instance:groupId:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GroupModelApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GroupModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getNumModelGroupIds:modelNo:success:failure:" title="getNumModelGroupIds:modelNo:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNumModelGroupIds:modelNo:success:failure:">&ndash;&nbsp;getNumModelGroupIds:modelNo:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getNumModelGroupIds - Request the Total number of Group Ids for a Model. The callback didGetNumModelGroupIds is invoked upon success. The <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked on failure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getNumModelGroupIds:(NSNumber *)<em>deviceId</em> modelNo:(NSNumber *)<em>modelNo</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *modelNo , NSNumber *numberOfModelGroupIds ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modelNo</code></th>
+						<td><ul>
+<li>(NSNumber *) The Model number for the Group IDs request</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetNumModelGroupIds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GroupModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNumModelGroupIds:modelNo:" title="getNumModelGroupIds:modelNo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNumModelGroupIds:modelNo:">&ndash;&nbsp;getNumModelGroupIds:modelNo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getNumModelGroupIds:(NSNumber *)<em>deviceId</em> modelNo:(NSNumber *)<em>modelNo</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setModelGroupId:modelNo:groupIndex:instance:groupId:success:failure:" title="setModelGroupId:modelNo:groupIndex:instance:groupId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setModelGroupId:modelNo:groupIndex:instance:groupId:success:failure:">&ndash;&nbsp;setModelGroupId:modelNo:groupIndex:instance:groupId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setModelGroupId - Set Group Id for a Model, group index and model instance. The callback didSetModelGroupId is invoked upon success. The <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked on failure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setModelGroupId:(NSNumber *)<em>deviceId</em> modelNo:(NSNumber *)<em>modelNo</em> groupIndex:(NSNumber *)<em>groupIndex</em> instance:(NSNumber *)<em>instance</em> groupId:(NSNumber *)<em>groupId</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *modelNo , NSNumber *groupIndex , NSNumber *instance , NSNumber *groupId ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modelNo</code></th>
+						<td><ul>
+<li>(NSNumber *) The Model number for the Group IDs request</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIndex</code></th>
+						<td><ul>
+<li>(NSNumber *) A number of Group IDs can be stored in a model instance, this is determined by a call to</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>instance</code></th>
+						<td><ul>
+<li>(NSNumber *) The model instance for this device for which the Group ID for the given group index is set</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><ul>
+<li>(NSNumber *) The groupId to be set for the given Model, intance and Group index</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetNumModelGroupIds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GroupModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setModelGroupId:modelNo:groupIndex:instance:groupId:" title="setModelGroupId:modelNo:groupIndex:instance:groupId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setModelGroupId:modelNo:groupIndex:instance:groupId:">&ndash;&nbsp;setModelGroupId:modelNo:groupIndex:instance:groupId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setModelGroupId:(NSNumber *)<em>deviceId</em> modelNo:(NSNumber *)<em>modelNo</em> groupIndex:(NSNumber *)<em>groupIndex</em> instance:(NSNumber *)<em>instance</em> groupId:(NSNumber *)<em>groupId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getModelGroupId:modelNo:groupIndex:success:failure:" title="getModelGroupId:modelNo:groupIndex:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getModelGroupId:modelNo:groupIndex:success:failure:">&ndash;&nbsp;getModelGroupId:modelNo:groupIndex:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getModelGroupId - Get Group Id for a Model and group index. The callback didSetModelGroupId is invoked upon success. The <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage is invoked on failure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getModelGroupId:(NSNumber *)<em>deviceId</em> modelNo:(NSNumber *)<em>modelNo</em> groupIndex:(NSNumber *)<em>groupIndex</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *modelNo , NSNumber *groupIndex , NSNumber *instance , NSNumber *groupId ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modelNo</code></th>
+						<td><ul>
+<li>(NSNumber *) The Model number for the Group IDs request</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIndex</code></th>
+						<td><ul>
+<li>(NSNumber *) A number of Group IDs can be stored in a model instance, this is determined by a call to</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. Pair up with the id returned in didGetNumModelGroupIds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GroupModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getModelGroupId:modelNo:groupIndex:" title="getModelGroupId:modelNo:groupIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getModelGroupId:modelNo:groupIndex:">&ndash;&nbsp;getModelGroupId:modelNo:groupIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getModelGroupId:(NSNumber *)<em>deviceId</em> modelNo:(NSNumber *)<em>modelNo</em> groupIndex:(NSNumber *)<em>groupIndex</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groupModelApiDelegate" title="groupModelApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupModelApiDelegate">&nbsp;&nbsp;groupModelApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;GroupModelApiDelegate&gt; groupModelApiDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

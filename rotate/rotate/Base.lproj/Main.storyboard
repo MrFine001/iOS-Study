@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ml-zV-cdO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cf7-i0-Yz6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMN-xd-CGY">
+                                <rect key="frame" x="224" y="43" width="152" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="K82-mh-ynN"/>
+                                    <constraint firstAttribute="width" constant="152" id="sui-eM-ENP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w67-hC-y2x">
+                                <rect key="frame" x="110" y="143" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="U47-tC-IG1"/>
+                                    <constraint firstAttribute="width" constant="90" id="onl-xh-HuY"/>
+                                </constraints>
+                                <state key="normal" title="Press Me 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5y-My-Vbc">
+                                <rect key="frame" x="400" y="432" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="H0w-7O-Bab"/>
+                                </constraints>
+                                <state key="normal" title="Press me 4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0F-cA-5RS">
+                                <rect key="frame" x="110" y="432" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="FaU-pZ-ar7"/>
+                                </constraints>
+                                <state key="normal" title="Press me"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8X5-RN-XSb">
+                                <rect key="frame" x="400" y="143" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="KoF-HJ-ZZX"/>
+                                </constraints>
+                                <state key="normal" title="Press Me 2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8X5-RN-XSb" firstAttribute="baseline" secondItem="w67-hC-y2x" secondAttribute="firstBaseline" id="09U-We-d0C"/>
+                            <constraint firstItem="V0F-cA-5RS" firstAttribute="top" secondItem="s5y-My-Vbc" secondAttribute="top" id="4Rn-b9-aEd"/>
+                            <constraint firstItem="JMN-xd-CGY" firstAttribute="top" secondItem="1Ml-zV-cdO" secondAttribute="bottom" constant="23" id="8C2-OI-CqZ"/>
+                            <constraint firstItem="Cf7-i0-Yz6" firstAttribute="top" secondItem="V0F-cA-5RS" secondAttribute="bottom" constant="78" id="G3b-Ty-pkh"/>
+                            <constraint firstItem="w67-hC-y2x" firstAttribute="baseline" secondItem="8X5-RN-XSb" secondAttribute="firstBaseline" id="L30-5G-mLh"/>
+                            <constraint firstItem="w67-hC-y2x" firstAttribute="top" secondItem="8X5-RN-XSb" secondAttribute="top" id="NMi-QA-yNw"/>
+                            <constraint firstItem="w67-hC-y2x" firstAttribute="top" secondItem="JMN-xd-CGY" secondAttribute="bottom" constant="68" id="NoI-pS-CNY"/>
+                            <constraint firstAttribute="centerX" secondItem="w67-hC-y2x" secondAttribute="trailing" constant="100" id="Vhl-rE-WB3"/>
+                            <constraint firstItem="8X5-RN-XSb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="Wau-MB-m4U"/>
+                            <constraint firstItem="V0F-cA-5RS" firstAttribute="trailing" secondItem="w67-hC-y2x" secondAttribute="trailing" id="dZf-cd-v9s"/>
+                            <constraint firstItem="JMN-xd-CGY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rA7-D3-tAc"/>
+                            <constraint firstItem="w67-hC-y2x" firstAttribute="leading" secondItem="V0F-cA-5RS" secondAttribute="leading" id="swg-Vj-nPe"/>
+                            <constraint firstItem="s5y-My-Vbc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="w0T-58-91Y"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="s5y-My-Vbc" secondAttribute="bottom" constant="78" id="wk0-Vz-DHx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.99999999999997" y="305"/>
+        </scene>
+    </scenes>
+</document>

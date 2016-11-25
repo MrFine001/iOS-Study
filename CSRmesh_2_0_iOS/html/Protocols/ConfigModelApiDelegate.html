@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ConfigModelApiDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didGetDeviceInfo:info:infoType:meshRequestId:">- didGetDeviceInfo:info:infoType:meshRequestId:</option>
+		
+		<option value="//api/name/didResetDevice:deviceHash:">- didResetDevice:deviceHash:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ConfigModelApiDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ConfigModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@header <a href="../Classes/ConfigModelApi.html">ConfigModelApi</a> is a part of the CSRmesh Api and provides a set of methods related to the Config Model.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/didGetDeviceInfo:info:infoType:meshRequestId:" title="didGetDeviceInfo:info:infoType:meshRequestId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didGetDeviceInfo:info:infoType:meshRequestId:">&ndash;&nbsp;didGetDeviceInfo:info:infoType:meshRequestId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>didGetDeviceInfo delegate. Invoked by the CSRmesh library upon receiving the request to getInfo</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didGetDeviceInfo:(NSNumber *)<em>deviceId</em> info:(NSDictionary *)<em>info</em> infoType:(NSNumber *)<em>infoType</em> meshRequestId:(NSNumber *)<em>meshRequestId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>The ID assigned by the library to this device</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>info</code></th>
+						<td><ul>
+<li>(NSDictionary *) of the information requested
+kCSR_UUID_LOW - NSData of lower 64-bits of the UUID
+kCSR_UUID_HIGH - NSData of the higher 64-bits of the UUID
+kCSR_MODEL_LOW - NSData of the lower 64-bits of the bit encoded Models
+kCSR_MODEL_HIGH - NSData of the higher 64-bits of the bit encoded Models
+kCSR_VENDOR_IDENTIFIER - The VendorIdentifier is a 16-bit unsigned integer. This shall use the same enumerations as the existing Bluetooth SIG Company Identification assigned numbers
+kCSR_PRODUCT_IDENTIFIER - The ProductIdentifier is a 16-bit unsigned integer allocated by the Vendor
+kCSR_VERSION_NUMBER - The VersionNumber is a 32-bit unsigned integer allocated per product by the vendor. Each new version of the device shall have a different VersionNumber. A new version is defined as any change to the software, hardware or firmware of a device, even if this change is meant to have no material impact to the behavior of the device.
+kCSR_APPEARANCE - The Appearance is a 24-bit unsigned integer using the same the Bluetooth SIG GAP Appearance characteristic values.
+kCSR_LAST_ETAG - The LastETag is a 64-bit unsigned integer that shall be set to a different value each time the device has a change in its configuration. This value is a read only value, and can be used to quickly determine if a device has changed the configuration of a device without another device reading the full configuration. The configuration is defined as any change to the device such that the device behavior changes - for example, changing Groups or the interval for sending Sensor broadcast data</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>infoType</code></th>
+						<td><ul>
+<li>(NSNumber *) Unsigned Char encoded with the type of information requested as follows</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didResetDevice:deviceHash:" title="didResetDevice:deviceHash:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didResetDevice:deviceHash:">&ndash;&nbsp;didResetDevice:deviceHash:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>didResetDevice delegate. Invoked by the CSRmesh library upon successful device reset</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didResetDevice:(NSNumber *)<em>deviceId</em> deviceHash:(NSData *)<em>deviceHash</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>The ID assigned by the library to this device</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

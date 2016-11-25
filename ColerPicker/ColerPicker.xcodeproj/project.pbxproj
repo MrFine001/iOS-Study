@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3217C5F91C446F4000D3F949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217C5F81C446F4000D3F949 /* main.m */; };
+		3217C5FC1C446F4000D3F949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217C5FB1C446F4000D3F949 /* AppDelegate.m */; };
+		3217C5FF1C446F4000D3F949 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217C5FE1C446F4000D3F949 /* ViewController.m */; };
+		3217C6021C446F4000D3F949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3217C6001C446F4000D3F949 /* Main.storyboard */; };
+		3217C6041C446F4000D3F949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3217C6031C446F4000D3F949 /* Assets.xcassets */; };
+		3217C6071C446F4000D3F949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3217C6051C446F4000D3F949 /* LaunchScreen.storyboard */; };
+		3217C6121C446F4000D3F949 /* ColerPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217C6111C446F4000D3F949 /* ColerPickerTests.m */; };
+		3217C61D1C446F4000D3F949 /* ColerPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217C61C1C446F4000D3F949 /* ColerPickerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3217C60E1C446F4000D3F949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3217C5EC1C446F4000D3F949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3217C5F31C446F4000D3F949;
+			remoteInfo = ColerPicker;
+		};
+		3217C6191C446F4000D3F949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3217C5EC1C446F4000D3F949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3217C5F31C446F4000D3F949;
+			remoteInfo = ColerPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3217C5F41C446F4000D3F949 /* ColerPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColerPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3217C5F81C446F4000D3F949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3217C5FA1C446F4000D3F949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3217C5FB1C446F4000D3F949 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3217C5FD1C446F4000D3F949 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3217C5FE1C446F4000D3F949 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3217C6011C446F4000D3F949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3217C6031C446F4000D3F949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3217C6061C446F4000D3F949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3217C6081C446F4000D3F949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3217C60D1C446F4000D3F949 /* ColerPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColerPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3217C6111C446F4000D3F949 /* ColerPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColerPickerTests.m; sourceTree = "<group>"; };
+		3217C6131C446F4000D3F949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3217C6181C446F4000D3F949 /* ColerPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColerPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3217C61C1C446F4000D3F949 /* ColerPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColerPickerUITests.m; sourceTree = "<group>"; };
+		3217C61E1C446F4000D3F949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3217C5F11C446F4000D3F949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3217C60A1C446F4000D3F949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3217C6151C446F4000D3F949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3217C5EB1C446F4000D3F949 = {
+			isa = PBXGroup;
+			children = (
+				3217C5F61C446F4000D3F949 /* ColerPicker */,
+				3217C6101C446F4000D3F949 /* ColerPickerTests */,
+				3217C61B1C446F4000D3F949 /* ColerPickerUITests */,
+				3217C5F51C446F4000D3F949 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3217C5F51C446F4000D3F949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3217C5F41C446F4000D3F949 /* ColerPicker.app */,
+				3217C60D1C446F4000D3F949 /* ColerPickerTests.xctest */,
+				3217C6181C446F4000D3F949 /* ColerPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3217C5F61C446F4000D3F949 /* ColerPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3217C5FA1C446F4000D3F949 /* AppDelegate.h */,
+				3217C5FB1C446F4000D3F949 /* AppDelegate.m */,
+				3217C5FD1C446F4000D3F949 /* ViewController.h */,
+				3217C5FE1C446F4000D3F949 /* ViewController.m */,
+				3217C6001C446F4000D3F949 /* Main.storyboard */,
+				3217C6031C446F4000D3F949 /* Assets.xcassets */,
+				3217C6051C446F4000D3F949 /* LaunchScreen.storyboard */,
+				3217C6081C446F4000D3F949 /* Info.plist */,
+				3217C5F71C446F4000D3F949 /* Supporting Files */,
+			);
+			path = ColerPicker;
+			sourceTree = "<group>";
+		};
+		3217C5F71C446F4000D3F949 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3217C5F81C446F4000D3F949 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3217C6101C446F4000D3F949 /* ColerPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3217C6111C446F4000D3F949 /* ColerPickerTests.m */,
+				3217C6131C446F4000D3F949 /* Info.plist */,
+			);
+			path = ColerPickerTests;
+			sourceTree = "<group>";
+		};
+		3217C61B1C446F4000D3F949 /* ColerPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3217C61C1C446F4000D3F949 /* ColerPickerUITests.m */,
+				3217C61E1C446F4000D3F949 /* Info.plist */,
+			);
+			path = ColerPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3217C5F31C446F4000D3F949 /* ColerPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3217C6211C446F4000D3F949 /* Build configuration list for PBXNativeTarget "ColerPicker" */;
+			buildPhases = (
+				3217C5F01C446F4000D3F949 /* Sources */,
+				3217C5F11C446F4000D3F949 /* Frameworks */,
+				3217C5F21C446F4000D3F949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColerPicker;
+			productName = ColerPicker;
+			productReference = 3217C5F41C446F4000D3F949 /* ColerPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3217C60C1C446F4000D3F949 /* ColerPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3217C6241C446F4000D3F949 /* Build configuration list for PBXNativeTarget "ColerPickerTests" */;
+			buildPhases = (
+				3217C6091C446F4000D3F949 /* Sources */,
+				3217C60A1C446F4000D3F949 /* Frameworks */,
+				3217C60B1C446F4000D3F949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3217C60F1C446F4000D3F949 /* PBXTargetDependency */,
+			);
+			name = ColerPickerTests;
+			productName = ColerPickerTests;
+			productReference = 3217C60D1C446F4000D3F949 /* ColerPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3217C6171C446F4000D3F949 /* ColerPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3217C6271C446F4000D3F949 /* Build configuration list for PBXNativeTarget "ColerPickerUITests" */;
+			buildPhases = (
+				3217C6141C446F4000D3F949 /* Sources */,
+				3217C6151C446F4000D3F949 /* Frameworks */,
+				3217C6161C446F4000D3F949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3217C61A1C446F4000D3F949 /* PBXTargetDependency */,
+			);
+			name = ColerPickerUITests;
+			productName = ColerPickerUITests;
+			productReference = 3217C6181C446F4000D3F949 /* ColerPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3217C5EC1C446F4000D3F949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = FineRui;
+				TargetAttributes = {
+					3217C5F31C446F4000D3F949 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 623CM983Y8;
+					};
+					3217C60C1C446F4000D3F949 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 623CM983Y8;
+						TestTargetID = 3217C5F31C446F4000D3F949;
+					};
+					3217C6171C446F4000D3F949 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 623CM983Y8;
+						TestTargetID = 3217C5F31C446F4000D3F949;
+					};
+				};
+			};
+			buildConfigurationList = 3217C5EF1C446F4000D3F949 /* Build configuration list for PBXProject "ColerPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3217C5EB1C446F4000D3F949;
+			productRefGroup = 3217C5F51C446F4000D3F949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3217C5F31C446F4000D3F949 /* ColerPicker */,
+				3217C60C1C446F4000D3F949 /* ColerPickerTests */,
+				3217C6171C446F4000D3F949 /* ColerPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3217C5F21C446F4000D3F949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3217C6071C446F4000D3F949 /* LaunchScreen.storyboard in Resources */,
+				3217C6041C446F4000D3F949 /* Assets.xcassets in Resources */,
+				3217C6021C446F4000D3F949 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3217C60B1C446F4000D3F949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3217C6161C446F4000D3F949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3217C5F01C446F4000D3F949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3217C5FF1C446F4000D3F949 /* ViewController.m in Sources */,
+				3217C5FC1C446F4000D3F949 /* AppDelegate.m in Sources */,
+				3217C5F91C446F4000D3F949 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3217C6091C446F4000D3F949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3217C6121C446F4000D3F949 /* ColerPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3217C6141C446F4000D3F949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3217C61D1C446F4000D3F949 /* ColerPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3217C60F1C446F4000D3F949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3217C5F31C446F4000D3F949 /* ColerPicker */;
+			targetProxy = 3217C60E1C446F4000D3F949 /* PBXContainerItemProxy */;
+		};
+		3217C61A1C446F4000D3F949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3217C5F31C446F4000D3F949 /* ColerPicker */;
+			targetProxy = 3217C6191C446F4000D3F949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3217C6001C446F4000D3F949 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3217C6011C446F4000D3F949 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3217C6051C446F4000D3F949 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3217C6061C446F4000D3F949 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3217C61F1C446F4000D3F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3217C6201C446F4000D3F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3217C6221C446F4000D3F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColerPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrFine.ColerPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3217C6231C446F4000D3F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColerPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrFine.ColerPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3217C6251C446F4000D3F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColerPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrFine.ColerPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColerPicker.app/ColerPicker";
+			};
+			name = Debug;
+		};
+		3217C6261C446F4000D3F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColerPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrFine.ColerPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColerPicker.app/ColerPicker";
+			};
+			name = Release;
+		};
+		3217C6281C446F4000D3F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColerPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrFine.ColerPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColerPicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3217C6291C446F4000D3F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColerPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MrFine.ColerPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColerPicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3217C5EF1C446F4000D3F949 /* Build configuration list for PBXProject "ColerPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3217C61F1C446F4000D3F949 /* Debug */,
+				3217C6201C446F4000D3F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3217C6211C446F4000D3F949 /* Build configuration list for PBXNativeTarget "ColerPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3217C6221C446F4000D3F949 /* Debug */,
+				3217C6231C446F4000D3F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3217C6241C446F4000D3F949 /* Build configuration list for PBXNativeTarget "ColerPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3217C6251C446F4000D3F949 /* Debug */,
+				3217C6261C446F4000D3F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3217C6271C446F4000D3F949 /* Build configuration list for PBXNativeTarget "ColerPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3217C6281C446F4000D3F949 /* Debug */,
+				3217C6291C446F4000D3F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3217C5EC1C446F4000D3F949 /* Project object */;
+}

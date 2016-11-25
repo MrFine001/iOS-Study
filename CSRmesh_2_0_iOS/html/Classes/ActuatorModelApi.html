@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ActuatorModelApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/actuatorModelApiDelegate">actuatorModelApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getTypes:firstType:">- getTypes:firstType:</option>
+		
+		<option value="//api/name/getTypes:firstType:success:failure:">- getTypes:firstType:success:failure:</option>
+		
+		<option value="//api/name/setValue:actuatorType:actuatorValue:acknowledge:">- setValue:actuatorType:actuatorValue:acknowledge:</option>
+		
+		<option value="//api/name/setValue:actuatorType:actuatorValue:success:failure:">- setValue:actuatorType:actuatorValue:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ActuatorModelApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ActuatorModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getTypes:firstType:success:failure:" title="getTypes:firstType:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTypes:firstType:success:failure:">&ndash;&nbsp;getTypes:firstType:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getTypes - request the Actuator Types that follow from the given given Actuator. If success is not nil then upon a successful transaction the success code block is executed and the callback didGetActuatorTypes shall be invoked. If the transaction fails then the failure code block shall be executed and the callback <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage shall be invoked.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getTypes:(NSNumber *)<em>deviceId</em> firstType:(NSNumber *)<em>firstType</em> success:(void ( ^ ) ( NSNumber *deviceId , NSArray *actuatorTypes ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>firstType</code></th>
+						<td><ul>
+<li>(NSNumber *) The first actuator type as an unsigned short.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Code block executed upon a successful transaction. The success code block parameters are (NSNumber <em>deviceId, NSNumber </em>actuatorType)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Code block executed upon a failed transaction.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. If success is nil then it is assumed an acknowledge is not required and therefore nil shall be returned.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ActuatorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTypes:firstType:" title="getTypes:firstType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTypes:firstType:">&ndash;&nbsp;getTypes:firstType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getTypes:(NSNumber *)<em>deviceId</em> firstType:(NSNumber *)<em>firstType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setValue:actuatorType:actuatorValue:success:failure:" title="setValue:actuatorType:actuatorValue:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setValue:actuatorType:actuatorValue:success:failure:">&ndash;&nbsp;setValue:actuatorType:actuatorValue:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setValue - Write the given value to the given actuator. If success is not nil then upon a successful transaction the success code block is executed and the callback didGetActuatorValue shall be invoked. If the transaction fails then the failure code block shall be executed and the callback <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>:didTimeoutMessage shall be invoked.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setValue:(NSNumber *)<em>deviceId</em> actuatorType:(NSNumber *)<em>actuatorType</em> actuatorValue:(NSNumber *)<em>actuatorValue</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *actuatorType ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actuatorType</code></th>
+						<td><ul>
+<li>(NSNumber *) The actuator type as an unsigned short wrapped up in an NSNumber.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actuatorValue</code></th>
+						<td><ul>
+<li>(NSData *) The value for an actuator as double wrapped in NSNumber. For temperature units are kelvin.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Code block executed upon a successful transaction. The success code block parameters are (NSNumber <em>deviceId, NSNumber </em>actuatorType)</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Code block executed upon a failed transaction.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - (NSNumber *) The id of the request. If success is nil then it is assumed an acknowledge is not required and therefore nil shall be returned.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ActuatorModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setValue:actuatorType:actuatorValue:acknowledge:" title="setValue:actuatorType:actuatorValue:acknowledge:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setValue:actuatorType:actuatorValue:acknowledge:">&ndash;&nbsp;setValue:actuatorType:actuatorValue:acknowledge:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setValue:(NSNumber *)<em>deviceId</em> actuatorType:(NSNumber *)<em>actuatorType</em> actuatorValue:(NSNumber *)<em>actuatorValue</em> acknowledge:(NSNumber *)<em>ack</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/actuatorModelApiDelegate" title="actuatorModelApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actuatorModelApiDelegate">&nbsp;&nbsp;actuatorModelApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ActuatorModelApiDelegate&gt; actuatorModelApiDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

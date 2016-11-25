@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MeshServiceApiDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didAssociateDevice:deviceHash:meshRequestId:">- didAssociateDevice:deviceHash:meshRequestId:</option>
+		
+		<option value="//api/name/didDiscoverDevice:rssi:">- didDiscoverDevice:rssi:</option>
+		
+		<option value="//api/name/didTimeoutMessage:">- didTimeoutMessage:</option>
+		
+		<option value="//api/name/didUpdateAppearance:appearanceValue:shortName:">- didUpdateAppearance:appearanceValue:shortName:</option>
+		
+		<option value="//api/name/isAssociatingDevice:stepsCompleted:totalSteps:meshRequestId:">- isAssociatingDevice:stepsCompleted:totalSteps:meshRequestId:</option>
+		
+		<option value="//api/name/setScannerEnabled:">- setScannerEnabled:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MeshServiceApiDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MeshServiceApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@header <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a> Class is a part of the CSRmesh Api and provides a set of Api methods to Initialise the CSRmesh library, Discover and Associate Mesh Devices, Control a mesh Device. The Api also provides support for REST calls and therefore the frameowrk CSRmeshRestClient.framework should be included in the project.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/didAssociateDevice:deviceHash:meshRequestId:" title="didAssociateDevice:deviceHash:meshRequestId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didAssociateDevice:deviceHash:meshRequestId:">&ndash;&nbsp;didAssociateDevice:deviceHash:meshRequestId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>didAssociate delegate. invoked by the CSRmesh library upon successful Association of a device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didAssociateDevice:(NSNumber *)<em>deviceId</em> deviceHash:(NSData *)<em>deviceHash</em> meshRequestId:(NSNumber *)<em>meshRequestId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>The CSRMesh Network ID of this device as an unsigned short</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceHash</code></th>
+						<td><ul>
+<li>The hash of the UUID of the device.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meshRequestId</code></th>
+						<td><ul>
+<li>The ID returned of the original associateDevice Api call.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isAssociatingDevice:stepsCompleted:totalSteps:meshRequestId:" title="isAssociatingDevice:stepsCompleted:totalSteps:meshRequestId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isAssociatingDevice:stepsCompleted:totalSteps:meshRequestId:">&ndash;&nbsp;isAssociatingDevice:stepsCompleted:totalSteps:meshRequestId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>isAssociatingDevice delegate. Invoked by the CSRmesh library. Provides an indication of progress.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)isAssociatingDevice:(NSData *)<em>deviceHash</em> stepsCompleted:(NSNumber *)<em>stepsCompleted</em> totalSteps:(NSNumber *)<em>totalSteps</em> meshRequestId:(NSNumber *)<em>meshRequestId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceHash</code></th>
+						<td><ul>
+<li>The device under Association</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stepsCompleted</code></th>
+						<td><ul>
+<li>The number of steps completed</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>totalSteps</code></th>
+						<td><ul>
+<li>The total number of steps</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meshRequestId</code></th>
+						<td><ul>
+<li>The ID returned from the associateDevice Api call.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> If the stepsCompleted > totalSteps this indicates failed to Associate</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didDiscoverDevice:rssi:" title="didDiscoverDevice:rssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didDiscoverDevice:rssi:">&ndash;&nbsp;didDiscoverDevice:rssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>didDiscoverDevice delegate. Invoked by the CSRmesh library.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didDiscoverDevice:(CBUUID *)<em>uuid</em> rssi:(NSNumber *)<em>rssi</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><ul>
+<li>The CBUUID of the Un-Associated Mesh Device</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rssi</code></th>
+						<td><ul>
+<li>The signal strength at the receiver.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScannerEnabled:" title="setScannerEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScannerEnabled:">&ndash;&nbsp;setScannerEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setScannerEnabled delegate. Invoked by the CSRmesh library.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScannerEnabled:(NSNumber *)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><ul>
+<li>NSNumber boolValue of the request from the Library to change the state of the Scanner. If this delegate is not implemented then the CSRmesh Library will control the scanner directly. This is conditional on the Application having first made a call to setCentralManager to pass the CBCentralManager handle to the Library.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didUpdateAppearance:appearanceValue:shortName:" title="didUpdateAppearance:appearanceValue:shortName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didUpdateAppearance:appearanceValue:shortName:">&ndash;&nbsp;didUpdateAppearance:appearanceValue:shortName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>didUpdateAppearance delegate. Invoked by the CSRmesh library.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didUpdateAppearance:(NSData *)<em>deviceHash</em> appearanceValue:(NSNumber *)<em>appearanceValue</em> shortName:(NSData *)<em>shortName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceHash</code></th>
+						<td><ul>
+<li>NSData. This is the lowest 31-bits of the SHA-256 of the DeviceUUID of New Device.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appearanceValue</code></th>
+						<td><ul>
+<li>NSNumber. The Appearance field is a 24-bit value that is composed of an “organization” and an “organization appearance”. The following organizations are defined:
+0x00 = Bluetooth SIG
+For the Bluetooth SIG organization, the organization appearance is from the assigned numbers for the Appearance Characteristic Value.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shortName</code></th>
+						<td><ul>
+<li>NSData. The ShortName field is the first 9-octets of the name of this device. This is set by the manufacturer of the device.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didTimeoutMessage:" title="didTimeoutMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didTimeoutMessage:">&ndash;&nbsp;didTimeoutMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>didTimeoutMessage delegate. Invoked by the CSRmesh library to indicate loss of acknowledgement. Each of the acknowledged Api methods when called returns a meshRequestId. The same meshRequestId is used in this callback to indicate a loss of acknowledgement for the given messageId within the given timeout. The timeout can be computed as the (number_of_retries x retry_interval) (<b class="deprecated">Deprecated:</b><span class="deprecated"> Replaced with failure code block.</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didTimeoutMessage:(NSNumber *)<em>meshRequestId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meshRequestId</code></th>
+						<td><ul>
+<li>NSNumber. This is an int32 and is the ID of method call made into the library.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MeshServiceApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

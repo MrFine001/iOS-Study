@@ -1,0 +1,1421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D1A19331B67744D0091F3D9 /* CSRPlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1A19321B67744D0091F3D9 /* CSRPlaceTableViewCell.xib */; };
+		0D2F19FD1B74D5CC000CE22A /* CSRmesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2F19FB1B74D5CC000CE22A /* CSRmesh.framework */; };
+		0D2F19FE1B74D5CC000CE22A /* CSRmeshRestClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2F19FC1B74D5CC000CE22A /* CSRmeshRestClient.framework */; };
+		0D422ACA1B3ADCBF00F2B77A /* CSRDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D422AC91B3ADCBF00F2B77A /* CSRDeviceTableViewCell.xib */; };
+		0D432CE81B4C012B00D27611 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D432CE71B4C012B00D27611 /* CoreBluetooth.framework */; };
+		0D6E44F71B3C4059000A44DD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44ED1B3C4059000A44DD /* CoreData.framework */; };
+		0D6E44F81B3C4059000A44DD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44EE1B3C4059000A44DD /* CoreFoundation.framework */; };
+		0D6E44FA1B3C4059000A44DD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44F01B3C4059000A44DD /* CoreText.framework */; };
+		0D6E44FB1B3C4059000A44DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44F11B3C4059000A44DD /* Foundation.framework */; };
+		0D6E44FC1B3C4059000A44DD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44F21B3C4059000A44DD /* MobileCoreServices.framework */; };
+		0D6E44FE1B3C4059000A44DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44F41B3C4059000A44DD /* SystemConfiguration.framework */; };
+		0D6E44FF1B3C4059000A44DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44F51B3C4059000A44DD /* UIKit.framework */; };
+		0D6E45021B3C407A000A44DD /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E45011B3C407A000A44DD /* QuickLook.framework */; };
+		0D732D711BA040100041195E /* CSRGatewayEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D732D701BA040100041195E /* CSRGatewayEntity.m */; };
+		0D74DE7C1BA8300000D0BB1B /* CSRTemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D74DE7B1BA8300000D0BB1B /* CSRTemperatureViewController.m */; };
+		0D835B361B9749E600FF4376 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE95D0A1B297FFB006D0397 /* AppDelegate.m */; };
+		0D835B371B9749E600FF4376 /* CBPeripheral+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = CE96B5251B57AC48009BAF5A /* CBPeripheral+Info.m */; };
+		0D835B381B9749E600FF4376 /* NSManagedObject+DeleteEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF52A781B3C5CF000C08599 /* NSManagedObject+DeleteEntities.m */; };
+		0D835B391B9749E600FF4376 /* UIViewController+CSRMenuSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A1E1B38645300E1BC46 /* UIViewController+CSRMenuSlidingViewController.m */; };
+		0D835B3A1B9749E600FF4376 /* CSRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ECA97F1B55442D00197A41 /* CSRAlertView.m */; };
+		0D835B3B1B9749E600FF4376 /* CSRMeshUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE96B5291B57AE98009BAF5A /* CSRMeshUtilities.m */; };
+		0D835B3C1B9749E600FF4376 /* CSRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE96B52B1B57AE98009BAF5A /* CSRUtilities.m */; };
+		0D835B3D1B9749E600FF4376 /* CSRmeshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E38371B501D45001B7ED5 /* CSRmeshManager.m */; };
+		0D835B3F1B9749E600FF4376 /* CSRParseAndLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E69F31B4D68FE000CF461 /* CSRParseAndLoad.m */; };
+		0D835B401B9749E600FF4376 /* CSRDatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADA8F51B3AF57000D18D56 /* CSRDatabaseViewController.m */; };
+		0D835B411B9749E600FF4376 /* CSRAppStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CF7E31B55390E00451332 /* CSRAppStateManager.m */; };
+		0D835B421B9749E600FF4376 /* CSRDevicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80334E1B39997100A7E3F0 /* CSRDevicesManager.m */; };
+		0D835B431B9749E600FF4376 /* CSRmeshDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8033501B39997100A7E3F0 /* CSRmeshDevice.m */; };
+		0D835B441B9749E600FF4376 /* CSRmeshArea.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8033521B39997100A7E3F0 /* CSRmeshArea.m */; };
+		0D835B461B9749E600FF4376 /* CSRDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE95D3E1B2990C4006D0397 /* CSRDatabaseManager.m */; };
+		0D835B4E1B9749E600FF4376 /* CSRMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC79FC1B3863F600E1BC46 /* CSRMenuTableViewCell.m */; };
+		0D835B4F1B9749E600FF4376 /* CSRMenuActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A19251B665C0B0091F3D9 /* CSRMenuActionTableViewCell.m */; };
+		0D835B501B9749E600FF4376 /* CSRMenuPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC79FE1B3863F600E1BC46 /* CSRMenuPercentDrivenInteractiveTransition.m */; };
+		0D835B511B9749E600FF4376 /* CSRMenuSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A001B3863F600E1BC46 /* CSRMenuSlidingAnimationController.m */; };
+		0D835B521B9749E600FF4376 /* CSRMenuSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A021B3863F600E1BC46 /* CSRMenuSlidingInteractiveTransition.m */; };
+		0D835B531B9749E600FF4376 /* CSRMenuSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A041B3863F600E1BC46 /* CSRMenuSlidingSegue.m */; };
+		0D835B541B9749E600FF4376 /* CSRMenuSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A061B3863F600E1BC46 /* CSRMenuSlidingViewController.m */; };
+		0D835B551B9749E600FF4376 /* CSRMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A081B3863F600E1BC46 /* CSRMenuViewController.m */; };
+		0D835B561B9749E600FF4376 /* CSRCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D73C7111B68E0980029B488 /* CSRCheckbox.m */; };
+		0D835B571B9749E600FF4376 /* CSRAreaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9486891B7E165D00BDEFBA /* CSRAreaTableViewCell.m */; };
+		0D835B581B9749E600FF4376 /* CSRDeviceSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5415361B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.m */; };
+		0D835B591B9749E600FF4376 /* CSRAreasMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9486851B7E157900BDEFBA /* CSRAreasMainViewController.m */; };
+		0D835B5A1B9749E600FF4376 /* CSRAreasSearchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2236B01B8DFF9A0050BFEF /* CSRAreasSearchMainViewController.m */; };
+		0D835B5B1B9749E600FF4376 /* CSRAreasDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94868C1B7E18E900BDEFBA /* CSRAreasDetailViewController.m */; };
+		0D835B5C1B9749E600FF4376 /* CSRDeviceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5415331B86146600B6E3B2 /* CSRDeviceSelectionViewController.m */; };
+		0D835B5D1B9749E600FF4376 /* CSRBridgeDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0AF0A51B569D27001A09FA /* CSRBridgeDiscoveryViewController.m */; };
+		0D835B5E1B9749E600FF4376 /* CSRLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E38331B4D5038001B7ED5 /* CSRLightViewController.m */; };
+		0D835B5F1B9749E600FF4376 /* CSRDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DD19E1B399E9F00BBC978 /* CSRDeviceTableViewCell.m */; };
+		0D835B601B9749E600FF4376 /* CSRNewDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9EE321B42A7A00000B6EF /* CSRNewDeviceTableViewCell.m */; };
+		0D835B611B9749E600FF4376 /* CSRDevicesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9EE2D1B41788B0000B6EF /* CSRDevicesListViewController.m */; };
+		0D835B621B9749E600FF4376 /* CSRDevicesSearchListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D78AF6F1B452AB8008E1D20 /* CSRDevicesSearchListTableViewController.m */; };
+		0D835B631B9749E600FF4376 /* CSRDeviceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DD1901B39691000BBC978 /* CSRDeviceDetailsViewController.m */; };
+		0D835B641B9749E600FF4376 /* CSRAddDeviceWizardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9EE261B4145040000B6EF /* CSRAddDeviceWizardViewController.m */; };
+		0D835B651B9749E600FF4376 /* CSRAreaSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EC1BC1B42F60F00C91921 /* CSRAreaSelectionViewController.m */; };
+		0D835B661B9749E600FF4376 /* CSRAreaSelectionSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6CE3FC1B43BFCA000B10CA /* CSRAreaSelectionSearchTableViewController.m */; };
+		0D835B671B9749E600FF4376 /* CSRPlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A19301B667C210091F3D9 /* CSRPlaceTableViewCell.m */; };
+		0D835B681B9749E600FF4376 /* CSRPlaceColorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D73C7151B68FFBA0029B488 /* CSRPlaceColorCollectionViewCell.m */; };
+		0D835B691B9749E600FF4376 /* CSRPlaceIconCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D73C7181B68FFDB0029B488 /* CSRPlaceIconCollectionViewCell.m */; };
+		0D835B6A1B9749E600FF4376 /* CSRManagePlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A19291B6679250091F3D9 /* CSRManagePlacesViewController.m */; };
+		0D835B6B1B9749E700FF4376 /* CSRPlacesSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A19351B6778C00091F3D9 /* CSRPlacesSearchTableViewController.m */; };
+		0D835B6C1B9749E700FF4376 /* CSRPlaceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A192C1B66794D0091F3D9 /* CSRPlaceDetailsViewController.m */; };
+		0D835B6D1B9749E700FF4376 /* CSRPlacesColorIconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D73C71B1B6902BB0029B488 /* CSRPlacesColorIconPickerViewController.m */; };
+		0D835B6E1B9749E700FF4376 /* CSRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ECA97C1B55441400197A41 /* CSRLoginViewController.m */; };
+		0D835B6F1B9749E700FF4376 /* CSRSwitchableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BC041B6FCA600015AB07 /* CSRSwitchableTableViewCell.m */; };
+		0D835B701B9749E700FF4376 /* CSRDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BC071B6FCA8E0015AB07 /* CSRDetailsTableViewCell.m */; };
+		0D835B711B9749E700FF4376 /* CSRActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BC0A1B70B6CE0015AB07 /* CSRActionTableViewCell.m */; };
+		0D835B721B9749E700FF4376 /* CSRBearerOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E18CC1B73FC40002482C5 /* CSRBearerOptionTableViewCell.m */; };
+		0D835B731B9749E700FF4376 /* CSRGatewayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4C3C21B95D458006381F1 /* CSRGatewayTableViewCell.m */; };
+		0D835B741B9749E700FF4376 /* CSRApplicationSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BC001B6FC8990015AB07 /* CSRApplicationSettingsViewController.m */; };
+		0D835B751B9749E700FF4376 /* CSRBearerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E18C91B73F861002482C5 /* CSRBearerPickerViewController.m */; };
+		0D835B761B9749E700FF4376 /* CSRGatewayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4C3BE1B95D317006381F1 /* CSRGatewayListViewController.m */; };
+		0D835B771B9749E700FF4376 /* CSRGatewayConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4C3BC1B95D317006381F1 /* CSRGatewayConnectionViewController.m */; };
+		0D835B781B9749E700FF4376 /* CSRDeveloperOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6150AC1B721C4F008F9FA8 /* CSRDeveloperOptionsViewController.m */; };
+		0D835B791B9749E700FF4376 /* CSRAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D12A7A91B7391F7005AD739 /* CSRAboutViewController.m */; };
+		0D835B7A1B9749E700FF4376 /* CSRMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DD1871B3963C600BBC978 /* CSRMainTableViewController.m */; };
+		0D835B7B1B9749E700FF4376 /* CSRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC7A0B1B3863F600E1BC46 /* CSRMainViewController.m */; };
+		0D835B7C1B9749E700FF4376 /* CSRBridgeRoaming.m in Sources */ = {isa = PBXBuildFile; fileRef = CE96B5221B57AACF009BAF5A /* CSRBridgeRoaming.m */; };
+		0D835B7D1B9749E700FF4376 /* CSRBluetoothLE.m in Sources */ = {isa = PBXBuildFile; fileRef = CE96B51F1B57A8F3009BAF5A /* CSRBluetoothLE.m */; };
+		0D835B7E1B9749E700FF4376 /* CSRmeshSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D432D031B4C083A00D27611 /* CSRmeshSettings.m */; };
+		0D835B7F1B9749E700FF4376 /* CSRmeshStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC79F51B3863BD00E1BC46 /* CSRmeshStyleKit.m */; };
+		0D835B801B9749E700FF4376 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE95D071B297FFB006D0397 /* main.m */; };
+		0D835B811B974A1100FF4376 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE95D171B297FFB006D0397 /* LaunchScreen.xib */; };
+		0D835B821B974A1100FF4376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE95D121B297FFB006D0397 /* Main.storyboard */; };
+		0D835B851B975E8700FF4376 /* CSRSettingsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D835B841B975E8700FF4376 /* CSRSettingsEntity.m */; };
+		0D835B881B975E8800FF4376 /* CSRDeviceEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D835B871B975E8800FF4376 /* CSRDeviceEntity.m */; };
+		0D835B8B1B975E8800FF4376 /* CSRUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D835B8A1B975E8800FF4376 /* CSRUserEntity.m */; };
+		0D835B8E1B975E8800FF4376 /* CSRPlaceEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D835B8D1B975E8800FF4376 /* CSRPlaceEntity.m */; };
+		0D835B941B975E8800FF4376 /* CSRAreaEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D835B931B975E8800FF4376 /* CSRAreaEntity.m */; };
+		0D835B951B97603600FF4376 /* CSRmesh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEE5E7381B398ABB0039F83C /* CSRmesh.xcdatamodeld */; };
+		0D9723A81BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9723A71BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.m */; };
+		0D9723AB1BB4474800CDACFD /* CSRGatewayDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9723AA1BB4474800CDACFD /* CSRGatewayDetailsViewController.m */; };
+		0D9723B11BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9723B01BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.m */; };
+		0DDB057F1BA2E860004F734F /* CSRWizardPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB057E1BA2E860004F734F /* CSRWizardPopoverViewController.m */; };
+		0DE95D161B297FFB006D0397 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE95D151B297FFB006D0397 /* Images.xcassets */; };
+		B42ACF9B9F724321B3679C0D /* libPods-CSRmeshDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E0E5486CD3A7B42E6F5200 /* libPods-CSRmeshDemo.a */; };
+		CE09D68F1BBED8D200D63C4F /* CSRActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09D68E1BBED8D200D63C4F /* CSRActivitiesViewController.m */; };
+		CE09D6991BBEDC2300D63C4F /* CSRActivitiesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09D6971BBEDC2300D63C4F /* CSRActivitiesTableViewCell.m */; };
+		CE09D69A1BBEDC2300D63C4F /* CSRActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE09D6981BBEDC2300D63C4F /* CSRActivitiesTableViewCell.xib */; };
+		CE165B151BAC7156002D0637 /* CSRFavouritesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE165B141BAC7156002D0637 /* CSRFavouritesCollectionViewController.m */; };
+		CE165B181BAC7160002D0637 /* CSRFavouritesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE165B171BAC7160002D0637 /* CSRFavouritesCollectionViewCell.m */; };
+		CE182C841BBD364200124808 /* CSRSegmentDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE182C831BBD364200124808 /* CSRSegmentDevicesViewController.m */; };
+		CE31FDA61BAAB2E100CA4772 /* CSRmeshDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31FDA51BAAB2E100CA4772 /* CSRmeshDemoUITests.m */; };
+		CE48FC651B81D66E00EF6157 /* CSRAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE48FC641B81D66E00EF6157 /* CSRAreaTableViewCell.xib */; };
+		CE5415391B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5415371B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.xib */; };
+		CE88141E1BB4212800AE4D3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E44F31B3C4059000A44DD /* QuartzCore.framework */; };
+		CED9EF061BD66C4C004EBAB0 /* CSRAreaSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED9EF051BD66C4C004EBAB0 /* CSRAreaSelectionManager.m */; };
+		CEF67E8D1BBC31FE00A514FF /* CSRLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF67E8C1BBC31FE00A514FF /* CSRLockViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE31FDA81BAAB2E100CA4772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DE95CFA1B297FFB006D0397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DE95D011B297FFB006D0397;
+			remoteInfo = CSRmeshDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D10BBFF1B6FC8990015AB07 /* CSRApplicationSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRApplicationSettingsViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D10BC001B6FC8990015AB07 /* CSRApplicationSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRApplicationSettingsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D10BC031B6FCA600015AB07 /* CSRSwitchableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRSwitchableTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D10BC041B6FCA600015AB07 /* CSRSwitchableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRSwitchableTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D10BC061B6FCA8E0015AB07 /* CSRDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDetailsTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D10BC071B6FCA8E0015AB07 /* CSRDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDetailsTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D10BC091B70B6CE0015AB07 /* CSRActionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRActionTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D10BC0A1B70B6CE0015AB07 /* CSRActionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRActionTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D12A7A81B7391F7005AD739 /* CSRAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAboutViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D12A7A91B7391F7005AD739 /* CSRAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAboutViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D1A19241B665C0B0091F3D9 /* CSRMenuActionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuActionTableViewCell.h; sourceTree = "<group>"; };
+		0D1A19251B665C0B0091F3D9 /* CSRMenuActionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuActionTableViewCell.m; sourceTree = "<group>"; };
+		0D1A19281B6679250091F3D9 /* CSRManagePlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRManagePlacesViewController.h; sourceTree = "<group>"; };
+		0D1A19291B6679250091F3D9 /* CSRManagePlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRManagePlacesViewController.m; sourceTree = "<group>"; };
+		0D1A192B1B66794D0091F3D9 /* CSRPlaceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRPlaceDetailsViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D1A192C1B66794D0091F3D9 /* CSRPlaceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRPlaceDetailsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D1A192F1B667C210091F3D9 /* CSRPlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRPlaceTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D1A19301B667C210091F3D9 /* CSRPlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRPlaceTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D1A19321B67744D0091F3D9 /* CSRPlaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRPlaceTableViewCell.xib; sourceTree = "<group>"; };
+		0D1A19341B6778C00091F3D9 /* CSRPlacesSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRPlacesSearchTableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D1A19351B6778C00091F3D9 /* CSRPlacesSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRPlacesSearchTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D1EC1BC1B42F60F00C91921 /* CSRAreaSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRAreaSelectionViewController.m; sourceTree = "<group>"; };
+		0D2F19FB1B74D5CC000CE22A /* CSRmesh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSRmesh.framework; sourceTree = "<group>"; };
+		0D2F19FC1B74D5CC000CE22A /* CSRmeshRestClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSRmeshRestClient.framework; sourceTree = "<group>"; };
+		0D422AC91B3ADCBF00F2B77A /* CSRDeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		0D432CE71B4C012B00D27611 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0D432D021B4C083A00D27611 /* CSRmeshSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRmeshSettings.h; sourceTree = "<group>"; };
+		0D432D031B4C083A00D27611 /* CSRmeshSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRmeshSettings.m; sourceTree = "<group>"; };
+		0D5E38321B4D5038001B7ED5 /* CSRLightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRLightViewController.h; sourceTree = "<group>"; };
+		0D5E38331B4D5038001B7ED5 /* CSRLightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRLightViewController.m; sourceTree = "<group>"; };
+		0D5E38361B501D45001B7ED5 /* CSRmeshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRmeshManager.h; sourceTree = "<group>"; };
+		0D5E38371B501D45001B7ED5 /* CSRmeshManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRmeshManager.m; sourceTree = "<group>"; };
+		0D6150AB1B721C4F008F9FA8 /* CSRDeveloperOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDeveloperOptionsViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D6150AC1B721C4F008F9FA8 /* CSRDeveloperOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDeveloperOptionsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D6CE3FB1B43BFCA000B10CA /* CSRAreaSelectionSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRAreaSelectionSearchTableViewController.h; sourceTree = "<group>"; };
+		0D6CE3FC1B43BFCA000B10CA /* CSRAreaSelectionSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRAreaSelectionSearchTableViewController.m; sourceTree = "<group>"; };
+		0D6E18C81B73F861002482C5 /* CSRBearerPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRBearerPickerViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D6E18C91B73F861002482C5 /* CSRBearerPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRBearerPickerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D6E18CB1B73FC40002482C5 /* CSRBearerOptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRBearerOptionTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D6E18CC1B73FC40002482C5 /* CSRBearerOptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRBearerOptionTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D6E44EC1B3C4059000A44DD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0D6E44ED1B3C4059000A44DD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D6E44EE1B3C4059000A44DD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0D6E44EF1B3C4059000A44DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D6E44F01B3C4059000A44DD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0D6E44F11B3C4059000A44DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D6E44F21B3C4059000A44DD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0D6E44F31B3C4059000A44DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0D6E44F41B3C4059000A44DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0D6E44F51B3C4059000A44DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D6E45011B3C407A000A44DD /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		0D732D6F1BA040100041195E /* CSRGatewayEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRGatewayEntity.h; path = "Model Classes/CSRGatewayEntity.h"; sourceTree = "<group>"; };
+		0D732D701BA040100041195E /* CSRGatewayEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRGatewayEntity.m; path = "Model Classes/CSRGatewayEntity.m"; sourceTree = "<group>"; };
+		0D73C7101B68E0980029B488 /* CSRCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRCheckbox.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D73C7111B68E0980029B488 /* CSRCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRCheckbox.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D73C7141B68FFBA0029B488 /* CSRPlaceColorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRPlaceColorCollectionViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D73C7151B68FFBA0029B488 /* CSRPlaceColorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRPlaceColorCollectionViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D73C7171B68FFDB0029B488 /* CSRPlaceIconCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRPlaceIconCollectionViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D73C7181B68FFDB0029B488 /* CSRPlaceIconCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRPlaceIconCollectionViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D73C71A1B6902BB0029B488 /* CSRPlacesColorIconPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRPlacesColorIconPickerViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D73C71B1B6902BB0029B488 /* CSRPlacesColorIconPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRPlacesColorIconPickerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D74DE7A1BA8300000D0BB1B /* CSRTemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRTemperatureViewController.h; sourceTree = "<group>"; };
+		0D74DE7B1BA8300000D0BB1B /* CSRTemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRTemperatureViewController.m; sourceTree = "<group>"; };
+		0D78AF6E1B452AB8008E1D20 /* CSRDevicesSearchListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRDevicesSearchListTableViewController.h; sourceTree = "<group>"; };
+		0D78AF6F1B452AB8008E1D20 /* CSRDevicesSearchListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRDevicesSearchListTableViewController.m; sourceTree = "<group>"; };
+		0D835B831B975E8700FF4376 /* CSRSettingsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRSettingsEntity.h; path = "Model Classes/CSRSettingsEntity.h"; sourceTree = "<group>"; };
+		0D835B841B975E8700FF4376 /* CSRSettingsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRSettingsEntity.m; path = "Model Classes/CSRSettingsEntity.m"; sourceTree = "<group>"; };
+		0D835B861B975E8800FF4376 /* CSRDeviceEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRDeviceEntity.h; path = "Model Classes/CSRDeviceEntity.h"; sourceTree = "<group>"; };
+		0D835B871B975E8800FF4376 /* CSRDeviceEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRDeviceEntity.m; path = "Model Classes/CSRDeviceEntity.m"; sourceTree = "<group>"; };
+		0D835B891B975E8800FF4376 /* CSRUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRUserEntity.h; path = "Model Classes/CSRUserEntity.h"; sourceTree = "<group>"; };
+		0D835B8A1B975E8800FF4376 /* CSRUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRUserEntity.m; path = "Model Classes/CSRUserEntity.m"; sourceTree = "<group>"; };
+		0D835B8C1B975E8800FF4376 /* CSRPlaceEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRPlaceEntity.h; path = "Model Classes/CSRPlaceEntity.h"; sourceTree = "<group>"; };
+		0D835B8D1B975E8800FF4376 /* CSRPlaceEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRPlaceEntity.m; path = "Model Classes/CSRPlaceEntity.m"; sourceTree = "<group>"; };
+		0D835B921B975E8800FF4376 /* CSRAreaEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRAreaEntity.h; path = "Model Classes/CSRAreaEntity.h"; sourceTree = "<group>"; };
+		0D835B931B975E8800FF4376 /* CSRAreaEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRAreaEntity.m; path = "Model Classes/CSRAreaEntity.m"; sourceTree = "<group>"; };
+		0D9723A61BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRAssociatedGatewaysListViewController.h; sourceTree = "<group>"; };
+		0D9723A71BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRAssociatedGatewaysListViewController.m; sourceTree = "<group>"; };
+		0D9723A91BB4474800CDACFD /* CSRGatewayDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRGatewayDetailsViewController.h; sourceTree = "<group>"; };
+		0D9723AA1BB4474800CDACFD /* CSRGatewayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRGatewayDetailsViewController.m; sourceTree = "<group>"; };
+		0D9723AF1BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRGatewayDetailsTableViewCell.h; sourceTree = "<group>"; };
+		0D9723B01BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRGatewayDetailsTableViewCell.m; sourceTree = "<group>"; };
+		0D9CF7E21B55390E00451332 /* CSRAppStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAppStateManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D9CF7E31B55390E00451332 /* CSRAppStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAppStateManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D9DD1861B3963C600BBC978 /* CSRMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMainTableViewController.h; sourceTree = "<group>"; };
+		0D9DD1871B3963C600BBC978 /* CSRMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMainTableViewController.m; sourceTree = "<group>"; };
+		0D9DD18F1B39691000BBC978 /* CSRDeviceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDeviceDetailsViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0D9DD1901B39691000BBC978 /* CSRDeviceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDeviceDetailsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0D9DD19D1B399E9F00BBC978 /* CSRDeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRDeviceTableViewCell.h; sourceTree = "<group>"; };
+		0D9DD19E1B399E9F00BBC978 /* CSRDeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRDeviceTableViewCell.m; sourceTree = "<group>"; };
+		0DD9EE251B4145040000B6EF /* CSRAddDeviceWizardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAddDeviceWizardViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0DD9EE261B4145040000B6EF /* CSRAddDeviceWizardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAddDeviceWizardViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0DD9EE2C1B41788B0000B6EF /* CSRDevicesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRDevicesListViewController.h; sourceTree = "<group>"; };
+		0DD9EE2D1B41788B0000B6EF /* CSRDevicesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRDevicesListViewController.m; sourceTree = "<group>"; };
+		0DD9EE311B42A7A00000B6EF /* CSRNewDeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRNewDeviceTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0DD9EE321B42A7A00000B6EF /* CSRNewDeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRNewDeviceTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0DD9EE351B42CCEB0000B6EF /* CSRAreaSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRAreaSelectionViewController.h; sourceTree = "<group>"; };
+		0DDB057D1BA2E860004F734F /* CSRWizardPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRWizardPopoverViewController.h; sourceTree = "<group>"; };
+		0DDB057E1BA2E860004F734F /* CSRWizardPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRWizardPopoverViewController.m; sourceTree = "<group>"; };
+		0DE95D021B297FFB006D0397 /* CSRmeshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSRmeshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DE95D071B297FFB006D0397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0DE95D091B297FFB006D0397 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0DE95D0A1B297FFB006D0397 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0DE95D131B297FFB006D0397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DE95D151B297FFB006D0397 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0DE95D181B297FFB006D0397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0DE95D3D1B2990C4006D0397 /* CSRDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDatabaseManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0DE95D3E1B2990C4006D0397 /* CSRDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDatabaseManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0DF4C3BB1B95D317006381F1 /* CSRGatewayConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRGatewayConnectionViewController.h; sourceTree = "<group>"; };
+		0DF4C3BC1B95D317006381F1 /* CSRGatewayConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRGatewayConnectionViewController.m; sourceTree = "<group>"; };
+		0DF4C3BD1B95D317006381F1 /* CSRGatewayListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRGatewayListViewController.h; sourceTree = "<group>"; };
+		0DF4C3BE1B95D317006381F1 /* CSRGatewayListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRGatewayListViewController.m; sourceTree = "<group>"; };
+		0DF4C3C11B95D458006381F1 /* CSRGatewayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRGatewayTableViewCell.h; sourceTree = "<group>"; };
+		0DF4C3C21B95D458006381F1 /* CSRGatewayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRGatewayTableViewCell.m; sourceTree = "<group>"; };
+		0DFC79F41B3863BD00E1BC46 /* CSRmeshStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRmeshStyleKit.h; sourceTree = "<group>"; };
+		0DFC79F51B3863BD00E1BC46 /* CSRmeshStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRmeshStyleKit.m; sourceTree = "<group>"; };
+		0DFC79FB1B3863F600E1BC46 /* CSRMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuTableViewCell.h; sourceTree = "<group>"; };
+		0DFC79FC1B3863F600E1BC46 /* CSRMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuTableViewCell.m; sourceTree = "<group>"; };
+		0DFC79FD1B3863F600E1BC46 /* CSRMenuPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		0DFC79FE1B3863F600E1BC46 /* CSRMenuPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		0DFC79FF1B3863F600E1BC46 /* CSRMenuSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuSlidingAnimationController.h; sourceTree = "<group>"; };
+		0DFC7A001B3863F600E1BC46 /* CSRMenuSlidingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuSlidingAnimationController.m; sourceTree = "<group>"; };
+		0DFC7A011B3863F600E1BC46 /* CSRMenuSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuSlidingInteractiveTransition.h; sourceTree = "<group>"; };
+		0DFC7A021B3863F600E1BC46 /* CSRMenuSlidingInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuSlidingInteractiveTransition.m; sourceTree = "<group>"; };
+		0DFC7A031B3863F600E1BC46 /* CSRMenuSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuSlidingSegue.h; sourceTree = "<group>"; };
+		0DFC7A041B3863F600E1BC46 /* CSRMenuSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuSlidingSegue.m; sourceTree = "<group>"; };
+		0DFC7A051B3863F600E1BC46 /* CSRMenuSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuSlidingViewController.h; sourceTree = "<group>"; };
+		0DFC7A061B3863F600E1BC46 /* CSRMenuSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuSlidingViewController.m; sourceTree = "<group>"; };
+		0DFC7A071B3863F600E1BC46 /* CSRMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMenuViewController.h; sourceTree = "<group>"; };
+		0DFC7A081B3863F600E1BC46 /* CSRMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMenuViewController.m; sourceTree = "<group>"; };
+		0DFC7A0A1B3863F600E1BC46 /* CSRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMainViewController.h; sourceTree = "<group>"; };
+		0DFC7A0B1B3863F600E1BC46 /* CSRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRMainViewController.m; sourceTree = "<group>"; };
+		0DFC7A1D1B38645300E1BC46 /* UIViewController+CSRMenuSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIViewController+CSRMenuSlidingViewController.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0DFC7A1E1B38645300E1BC46 /* UIViewController+CSRMenuSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIViewController+CSRMenuSlidingViewController.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21E8BD706E7999E674D8A47D /* Pods-CSRmeshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSRmeshDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSRmeshDemo/Pods-CSRmeshDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		29E0E5486CD3A7B42E6F5200 /* libPods-CSRmeshDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSRmeshDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F31E078E653B6081DA01E2B /* Pods-CSRmeshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSRmeshDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSRmeshDemo/Pods-CSRmeshDemo.release.xcconfig"; sourceTree = "<group>"; };
+		85ECA97B1B55441400197A41 /* CSRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRLoginViewController.h; path = Login/CSRLoginViewController.h; sourceTree = "<group>"; };
+		85ECA97C1B55441400197A41 /* CSRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRLoginViewController.m; path = Login/CSRLoginViewController.m; sourceTree = "<group>"; };
+		85ECA97E1B55442D00197A41 /* CSRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAlertView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		85ECA97F1B55442D00197A41 /* CSRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAlertView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE09D68D1BBED8D200D63C4F /* CSRActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRActivitiesViewController.h; sourceTree = "<group>"; };
+		CE09D68E1BBED8D200D63C4F /* CSRActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRActivitiesViewController.m; sourceTree = "<group>"; };
+		CE09D6961BBEDC2300D63C4F /* CSRActivitiesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRActivitiesTableViewCell.h; sourceTree = "<group>"; };
+		CE09D6971BBEDC2300D63C4F /* CSRActivitiesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRActivitiesTableViewCell.m; sourceTree = "<group>"; };
+		CE09D6981BBEDC2300D63C4F /* CSRActivitiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRActivitiesTableViewCell.xib; sourceTree = "<group>"; };
+		CE0AF0A41B569D27001A09FA /* CSRBridgeDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRBridgeDiscoveryViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE0AF0A51B569D27001A09FA /* CSRBridgeDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRBridgeDiscoveryViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE0E69F21B4D68FE000CF461 /* CSRParseAndLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRParseAndLoad.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE0E69F31B4D68FE000CF461 /* CSRParseAndLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRParseAndLoad.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE165B131BAC7156002D0637 /* CSRFavouritesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRFavouritesCollectionViewController.h; sourceTree = "<group>"; };
+		CE165B141BAC7156002D0637 /* CSRFavouritesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRFavouritesCollectionViewController.m; sourceTree = "<group>"; };
+		CE165B161BAC7160002D0637 /* CSRFavouritesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRFavouritesCollectionViewCell.h; sourceTree = "<group>"; };
+		CE165B171BAC7160002D0637 /* CSRFavouritesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRFavouritesCollectionViewCell.m; sourceTree = "<group>"; };
+		CE182C821BBD364200124808 /* CSRSegmentDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRSegmentDevicesViewController.h; sourceTree = "<group>"; };
+		CE182C831BBD364200124808 /* CSRSegmentDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRSegmentDevicesViewController.m; sourceTree = "<group>"; };
+		CE2236AF1B8DFF9A0050BFEF /* CSRAreasSearchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRAreasSearchMainViewController.h; sourceTree = "<group>"; };
+		CE2236B01B8DFF9A0050BFEF /* CSRAreasSearchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRAreasSearchMainViewController.m; sourceTree = "<group>"; };
+		CE31FDA31BAAB2E100CA4772 /* CSRmeshDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSRmeshDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE31FDA51BAAB2E100CA4772 /* CSRmeshDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSRmeshDemoUITests.m; sourceTree = "<group>"; };
+		CE31FDA71BAAB2E100CA4772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE48FC641B81D66E00EF6157 /* CSRAreaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRAreaTableViewCell.xib; sourceTree = "<group>"; };
+		CE5415321B86146600B6E3B2 /* CSRDeviceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDeviceSelectionViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE5415331B86146600B6E3B2 /* CSRDeviceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDeviceSelectionViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE5415351B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDeviceSelectionTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE5415361B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDeviceSelectionTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE5415371B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRDeviceSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		CE5661CD1BA6C7FE00815DC2 /* CSRWizardPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRWizardPopoverViewController.h; sourceTree = "<group>"; };
+		CE5661CE1BA6C7FE00815DC2 /* CSRWizardPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRWizardPopoverViewController.m; sourceTree = "<group>"; };
+		CE76AE111B9D897800C0B687 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE80334D1B39997100A7E3F0 /* CSRDevicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRDevicesManager.h; sourceTree = "<group>"; };
+		CE80334E1B39997100A7E3F0 /* CSRDevicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRDevicesManager.m; sourceTree = "<group>"; };
+		CE80334F1B39997100A7E3F0 /* CSRmeshDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRmeshDevice.h; sourceTree = "<group>"; };
+		CE8033501B39997100A7E3F0 /* CSRmeshDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRmeshDevice.m; sourceTree = "<group>"; };
+		CE8033511B39997100A7E3F0 /* CSRmeshArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRmeshArea.h; sourceTree = "<group>"; };
+		CE8033521B39997100A7E3F0 /* CSRmeshArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRmeshArea.m; sourceTree = "<group>"; };
+		CE9486841B7E157900BDEFBA /* CSRAreasMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAreasMainViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE9486851B7E157900BDEFBA /* CSRAreasMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAreasMainViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE9486881B7E165D00BDEFBA /* CSRAreaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAreaTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE9486891B7E165D00BDEFBA /* CSRAreaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAreaTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE94868B1B7E18E900BDEFBA /* CSRAreasDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRAreasDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE94868C1B7E18E900BDEFBA /* CSRAreasDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRAreasDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE96B51E1B57A8F3009BAF5A /* CSRBluetoothLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRBluetoothLE.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE96B51F1B57A8F3009BAF5A /* CSRBluetoothLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRBluetoothLE.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE96B5211B57AACF009BAF5A /* CSRBridgeRoaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRBridgeRoaming.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE96B5221B57AACF009BAF5A /* CSRBridgeRoaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRBridgeRoaming.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE96B5241B57AC48009BAF5A /* CBPeripheral+Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "CBPeripheral+Info.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE96B5251B57AC48009BAF5A /* CBPeripheral+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "CBPeripheral+Info.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE96B5271B57ACC3009BAF5A /* CSRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRConstants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE96B5281B57AE98009BAF5A /* CSRMeshUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRMeshUtilities.h; sourceTree = "<group>"; };
+		CE96B5291B57AE98009BAF5A /* CSRMeshUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRMeshUtilities.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CE96B52A1B57AE98009BAF5A /* CSRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRUtilities.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CE96B52B1B57AE98009BAF5A /* CSRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRUtilities.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CEADA8F21B3AF22E00D18D56 /* CSRmeshDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRmeshDemo.pch; sourceTree = "<group>"; };
+		CEADA8F41B3AF57000D18D56 /* CSRDatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CSRDatabaseViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CEADA8F51B3AF57000D18D56 /* CSRDatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CSRDatabaseViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CED9EF041BD66C4C004EBAB0 /* CSRAreaSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRAreaSelectionManager.h; sourceTree = "<group>"; };
+		CED9EF051BD66C4C004EBAB0 /* CSRAreaSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRAreaSelectionManager.m; sourceTree = "<group>"; };
+		CEE5E7391B398ABB0039F83C /* CSRmesh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CSRmesh.xcdatamodel; sourceTree = "<group>"; };
+		CEF52A771B3C5CF000C08599 /* NSManagedObject+DeleteEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSManagedObject+DeleteEntities.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CEF52A781B3C5CF000C08599 /* NSManagedObject+DeleteEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSManagedObject+DeleteEntities.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CEF67E8B1BBC31FE00A514FF /* CSRLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRLockViewController.h; sourceTree = "<group>"; };
+		CEF67E8C1BBC31FE00A514FF /* CSRLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRLockViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DE95CFF1B297FFB006D0397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE88141E1BB4212800AE4D3C /* QuartzCore.framework in Frameworks */,
+				0D2F19FE1B74D5CC000CE22A /* CSRmeshRestClient.framework in Frameworks */,
+				0D432CE81B4C012B00D27611 /* CoreBluetooth.framework in Frameworks */,
+				0D2F19FD1B74D5CC000CE22A /* CSRmesh.framework in Frameworks */,
+				0D6E45021B3C407A000A44DD /* QuickLook.framework in Frameworks */,
+				0D6E44F71B3C4059000A44DD /* CoreData.framework in Frameworks */,
+				0D6E44F81B3C4059000A44DD /* CoreFoundation.framework in Frameworks */,
+				0D6E44FA1B3C4059000A44DD /* CoreText.framework in Frameworks */,
+				0D6E44FB1B3C4059000A44DD /* Foundation.framework in Frameworks */,
+				0D6E44FC1B3C4059000A44DD /* MobileCoreServices.framework in Frameworks */,
+				0D6E44FE1B3C4059000A44DD /* SystemConfiguration.framework in Frameworks */,
+				0D6E44FF1B3C4059000A44DD /* UIKit.framework in Frameworks */,
+				B42ACF9B9F724321B3679C0D /* libPods-CSRmeshDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE31FDA01BAAB2E100CA4772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0052561DD4191E4895D97D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D2F19FB1B74D5CC000CE22A /* CSRmesh.framework */,
+				0D2F19FC1B74D5CC000CE22A /* CSRmeshRestClient.framework */,
+				0D432CE71B4C012B00D27611 /* CoreBluetooth.framework */,
+				0D6E44EC1B3C4059000A44DD /* AssetsLibrary.framework */,
+				0D6E44ED1B3C4059000A44DD /* CoreData.framework */,
+				0D6E44EE1B3C4059000A44DD /* CoreFoundation.framework */,
+				0D6E44EF1B3C4059000A44DD /* CoreGraphics.framework */,
+				0D6E44F01B3C4059000A44DD /* CoreText.framework */,
+				0D6E44F11B3C4059000A44DD /* Foundation.framework */,
+				0D6E44F21B3C4059000A44DD /* MobileCoreServices.framework */,
+				0D6E44F31B3C4059000A44DD /* QuartzCore.framework */,
+				0D6E45011B3C407A000A44DD /* QuickLook.framework */,
+				0D6E44F41B3C4059000A44DD /* SystemConfiguration.framework */,
+				0D6E44F51B3C4059000A44DD /* UIKit.framework */,
+				29E0E5486CD3A7B42E6F5200 /* libPods-CSRmeshDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D10BBFE1B6FC8750015AB07 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BC021B6FC9BB0015AB07 /* Cells */,
+				0D10BBFF1B6FC8990015AB07 /* CSRApplicationSettingsViewController.h */,
+				0D10BC001B6FC8990015AB07 /* CSRApplicationSettingsViewController.m */,
+				0D6E18C81B73F861002482C5 /* CSRBearerPickerViewController.h */,
+				0D6E18C91B73F861002482C5 /* CSRBearerPickerViewController.m */,
+				0DF4C3BD1B95D317006381F1 /* CSRGatewayListViewController.h */,
+				0DF4C3BE1B95D317006381F1 /* CSRGatewayListViewController.m */,
+				0DF4C3BB1B95D317006381F1 /* CSRGatewayConnectionViewController.h */,
+				0DF4C3BC1B95D317006381F1 /* CSRGatewayConnectionViewController.m */,
+				0D9723A61BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.h */,
+				0D9723A71BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.m */,
+				0D9723A91BB4474800CDACFD /* CSRGatewayDetailsViewController.h */,
+				0D9723AA1BB4474800CDACFD /* CSRGatewayDetailsViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0D10BC021B6FC9BB0015AB07 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BC031B6FCA600015AB07 /* CSRSwitchableTableViewCell.h */,
+				0D10BC041B6FCA600015AB07 /* CSRSwitchableTableViewCell.m */,
+				0D10BC061B6FCA8E0015AB07 /* CSRDetailsTableViewCell.h */,
+				0D10BC071B6FCA8E0015AB07 /* CSRDetailsTableViewCell.m */,
+				0D10BC091B70B6CE0015AB07 /* CSRActionTableViewCell.h */,
+				0D10BC0A1B70B6CE0015AB07 /* CSRActionTableViewCell.m */,
+				0D6E18CB1B73FC40002482C5 /* CSRBearerOptionTableViewCell.h */,
+				0D6E18CC1B73FC40002482C5 /* CSRBearerOptionTableViewCell.m */,
+				0DF4C3C11B95D458006381F1 /* CSRGatewayTableViewCell.h */,
+				0DF4C3C21B95D458006381F1 /* CSRGatewayTableViewCell.m */,
+				0D9723AF1BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.h */,
+				0D9723B01BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0D12A7A71B7391E8005AD739 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0D12A7A81B7391F7005AD739 /* CSRAboutViewController.h */,
+				0D12A7A91B7391F7005AD739 /* CSRAboutViewController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0D1A19271B6678E20091F3D9 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				0D1A192E1B667C030091F3D9 /* Cells */,
+				0D1A19281B6679250091F3D9 /* CSRManagePlacesViewController.h */,
+				0D1A19291B6679250091F3D9 /* CSRManagePlacesViewController.m */,
+				0D1A19341B6778C00091F3D9 /* CSRPlacesSearchTableViewController.h */,
+				0D1A19351B6778C00091F3D9 /* CSRPlacesSearchTableViewController.m */,
+				0D1A192B1B66794D0091F3D9 /* CSRPlaceDetailsViewController.h */,
+				0D1A192C1B66794D0091F3D9 /* CSRPlaceDetailsViewController.m */,
+				0D73C71A1B6902BB0029B488 /* CSRPlacesColorIconPickerViewController.h */,
+				0D73C71B1B6902BB0029B488 /* CSRPlacesColorIconPickerViewController.m */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		0D1A192E1B667C030091F3D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0D1A192F1B667C210091F3D9 /* CSRPlaceTableViewCell.h */,
+				0D1A19301B667C210091F3D9 /* CSRPlaceTableViewCell.m */,
+				0D1A19321B67744D0091F3D9 /* CSRPlaceTableViewCell.xib */,
+				0D73C7141B68FFBA0029B488 /* CSRPlaceColorCollectionViewCell.h */,
+				0D73C7151B68FFBA0029B488 /* CSRPlaceColorCollectionViewCell.m */,
+				0D73C7171B68FFDB0029B488 /* CSRPlaceIconCollectionViewCell.h */,
+				0D73C7181B68FFDB0029B488 /* CSRPlaceIconCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0D432CFA1B4C083A00D27611 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				CE96B5211B57AACF009BAF5A /* CSRBridgeRoaming.h */,
+				CE96B5221B57AACF009BAF5A /* CSRBridgeRoaming.m */,
+				CE96B51E1B57A8F3009BAF5A /* CSRBluetoothLE.h */,
+				CE96B51F1B57A8F3009BAF5A /* CSRBluetoothLE.m */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		0D432D011B4C083A00D27611 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0D432D021B4C083A00D27611 /* CSRmeshSettings.h */,
+				0D432D031B4C083A00D27611 /* CSRmeshSettings.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0D5E38311B4D501E001B7ED5 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				0D5E38321B4D5038001B7ED5 /* CSRLightViewController.h */,
+				0D5E38331B4D5038001B7ED5 /* CSRLightViewController.m */,
+				0D74DE7A1BA8300000D0BB1B /* CSRTemperatureViewController.h */,
+				0D74DE7B1BA8300000D0BB1B /* CSRTemperatureViewController.m */,
+				CEF67E8B1BBC31FE00A514FF /* CSRLockViewController.h */,
+				CEF67E8C1BBC31FE00A514FF /* CSRLockViewController.m */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		0D5E38351B501D45001B7ED5 /* CSRmeshManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D5E38361B501D45001B7ED5 /* CSRmeshManager.h */,
+				0D5E38371B501D45001B7ED5 /* CSRmeshManager.m */,
+			);
+			path = CSRmeshManager;
+			sourceTree = "<group>";
+		};
+		0D6150AA1B721C31008F9FA8 /* Developer options */ = {
+			isa = PBXGroup;
+			children = (
+				0D6150AB1B721C4F008F9FA8 /* CSRDeveloperOptionsViewController.h */,
+				0D6150AC1B721C4F008F9FA8 /* CSRDeveloperOptionsViewController.m */,
+			);
+			path = "Developer options";
+			sourceTree = "<group>";
+		};
+		0D73C70F1B68E0600029B488 /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				0D73C7101B68E0980029B488 /* CSRCheckbox.h */,
+				0D73C7111B68E0980029B488 /* CSRCheckbox.m */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		0D9CF7E11B55390E00451332 /* AppStateManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D9CF7E21B55390E00451332 /* CSRAppStateManager.h */,
+				0D9CF7E31B55390E00451332 /* CSRAppStateManager.m */,
+			);
+			path = AppStateManager;
+			sourceTree = "<group>";
+		};
+		0D9DD18A1B39649600BBC978 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DD19C1B399E9F00BBC978 /* Cells */,
+				0DD9EE2C1B41788B0000B6EF /* CSRDevicesListViewController.h */,
+				0DD9EE2D1B41788B0000B6EF /* CSRDevicesListViewController.m */,
+				0D78AF6E1B452AB8008E1D20 /* CSRDevicesSearchListTableViewController.h */,
+				0D78AF6F1B452AB8008E1D20 /* CSRDevicesSearchListTableViewController.m */,
+				0D9DD18F1B39691000BBC978 /* CSRDeviceDetailsViewController.h */,
+				0D9DD1901B39691000BBC978 /* CSRDeviceDetailsViewController.m */,
+				0DD9EE251B4145040000B6EF /* CSRAddDeviceWizardViewController.h */,
+				0DD9EE261B4145040000B6EF /* CSRAddDeviceWizardViewController.m */,
+				0DDB057D1BA2E860004F734F /* CSRWizardPopoverViewController.h */,
+				0DDB057E1BA2E860004F734F /* CSRWizardPopoverViewController.m */,
+				0DD9EE351B42CCEB0000B6EF /* CSRAreaSelectionViewController.h */,
+				0D1EC1BC1B42F60F00C91921 /* CSRAreaSelectionViewController.m */,
+				0D6CE3FB1B43BFCA000B10CA /* CSRAreaSelectionSearchTableViewController.h */,
+				0D6CE3FC1B43BFCA000B10CA /* CSRAreaSelectionSearchTableViewController.m */,
+				CE5661CD1BA6C7FE00815DC2 /* CSRWizardPopoverViewController.h */,
+				CE5661CE1BA6C7FE00815DC2 /* CSRWizardPopoverViewController.m */,
+				CED9EF041BD66C4C004EBAB0 /* CSRAreaSelectionManager.h */,
+				CED9EF051BD66C4C004EBAB0 /* CSRAreaSelectionManager.m */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		0D9DD19C1B399E9F00BBC978 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DD19D1B399E9F00BBC978 /* CSRDeviceTableViewCell.h */,
+				0D9DD19E1B399E9F00BBC978 /* CSRDeviceTableViewCell.m */,
+				0D422AC91B3ADCBF00F2B77A /* CSRDeviceTableViewCell.xib */,
+				0DD9EE311B42A7A00000B6EF /* CSRNewDeviceTableViewCell.h */,
+				0DD9EE321B42A7A00000B6EF /* CSRNewDeviceTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0DE95CF91B297FFB006D0397 = {
+			isa = PBXGroup;
+			children = (
+				0DE95D041B297FFB006D0397 /* CSRmeshDemo */,
+				CE31FDA41BAAB2E100CA4772 /* CSRmeshDemoUITests */,
+				0DE95D031B297FFB006D0397 /* Products */,
+				0052561DD4191E4895D97D40 /* Frameworks */,
+				3E4180A02FC2481021C09203 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0DE95D031B297FFB006D0397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DE95D021B297FFB006D0397 /* CSRmeshDemo.app */,
+				CE31FDA31BAAB2E100CA4772 /* CSRmeshDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DE95D041B297FFB006D0397 /* CSRmeshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0DE95D091B297FFB006D0397 /* AppDelegate.h */,
+				0DE95D0A1B297FFB006D0397 /* AppDelegate.m */,
+				0DFC7A1C1B38645300E1BC46 /* Categories */,
+				0DFC7A211B38649500E1BC46 /* Helpers */,
+				0DE95D411B299202006D0397 /* Utilities */,
+				0DE95D2F1B298FB7006D0397 /* Managers */,
+				0DE95D331B298FB7006D0397 /* UI */,
+				0D432CFA1B4C083A00D27611 /* BLE */,
+				0D432D011B4C083A00D27611 /* Settings */,
+				0DE95D151B297FFB006D0397 /* Images.xcassets */,
+				0DE95D171B297FFB006D0397 /* LaunchScreen.xib */,
+				0DE95D121B297FFB006D0397 /* Main.storyboard */,
+				0DFC79F31B3863BD00E1BC46 /* StyleKits */,
+				0DE95D051B297FFB006D0397 /* Supporting Files */,
+			);
+			path = CSRmeshDemo;
+			sourceTree = "<group>";
+		};
+		0DE95D051B297FFB006D0397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE76AE111B9D897800C0B687 /* Info.plist */,
+				CEADA8F21B3AF22E00D18D56 /* CSRmeshDemo.pch */,
+				0DE95D071B297FFB006D0397 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DE95D2F1B298FB7006D0397 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0D5E38351B501D45001B7ED5 /* CSRmeshManager */,
+				CEADA8F31B3AF57000D18D56 /* LoadShareManager */,
+				0D9CF7E11B55390E00451332 /* AppStateManager */,
+				CE80334C1B39997100A7E3F0 /* DevicesManager */,
+				0DE95D301B298FB7006D0397 /* DatabaseManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0DE95D301B298FB7006D0397 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				0DE95D3D1B2990C4006D0397 /* CSRDatabaseManager.h */,
+				0DE95D3E1B2990C4006D0397 /* CSRDatabaseManager.m */,
+				CEE5E7381B398ABB0039F83C /* CSRmesh.xcdatamodeld */,
+				CEE5E7231B3989DF0039F83C /* Model Classes */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		0DE95D331B298FB7006D0397 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC79F81B3863F600E1BC46 /* Elements */,
+				0DFC7A091B3863F600E1BC46 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0DE95D411B299202006D0397 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE96B5281B57AE98009BAF5A /* CSRMeshUtilities.h */,
+				CE96B5291B57AE98009BAF5A /* CSRMeshUtilities.m */,
+				CE96B52A1B57AE98009BAF5A /* CSRUtilities.h */,
+				CE96B52B1B57AE98009BAF5A /* CSRUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0DFC79F31B3863BD00E1BC46 /* StyleKits */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC79F41B3863BD00E1BC46 /* CSRmeshStyleKit.h */,
+				0DFC79F51B3863BD00E1BC46 /* CSRmeshStyleKit.m */,
+			);
+			path = StyleKits;
+			sourceTree = "<group>";
+		};
+		0DFC79F81B3863F600E1BC46 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC79F91B3863F600E1BC46 /* Menu */,
+				0D73C70F1B68E0600029B488 /* Checkbox */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		0DFC79F91B3863F600E1BC46 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC79FA1B3863F600E1BC46 /* Cells */,
+				0DFC79FD1B3863F600E1BC46 /* CSRMenuPercentDrivenInteractiveTransition.h */,
+				0DFC79FE1B3863F600E1BC46 /* CSRMenuPercentDrivenInteractiveTransition.m */,
+				0DFC79FF1B3863F600E1BC46 /* CSRMenuSlidingAnimationController.h */,
+				0DFC7A001B3863F600E1BC46 /* CSRMenuSlidingAnimationController.m */,
+				0DFC7A011B3863F600E1BC46 /* CSRMenuSlidingInteractiveTransition.h */,
+				0DFC7A021B3863F600E1BC46 /* CSRMenuSlidingInteractiveTransition.m */,
+				0DFC7A031B3863F600E1BC46 /* CSRMenuSlidingSegue.h */,
+				0DFC7A041B3863F600E1BC46 /* CSRMenuSlidingSegue.m */,
+				0DFC7A051B3863F600E1BC46 /* CSRMenuSlidingViewController.h */,
+				0DFC7A061B3863F600E1BC46 /* CSRMenuSlidingViewController.m */,
+				0DFC7A071B3863F600E1BC46 /* CSRMenuViewController.h */,
+				0DFC7A081B3863F600E1BC46 /* CSRMenuViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0DFC79FA1B3863F600E1BC46 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC79FB1B3863F600E1BC46 /* CSRMenuTableViewCell.h */,
+				0DFC79FC1B3863F600E1BC46 /* CSRMenuTableViewCell.m */,
+				0D1A19241B665C0B0091F3D9 /* CSRMenuActionTableViewCell.h */,
+				0D1A19251B665C0B0091F3D9 /* CSRMenuActionTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0DFC7A091B3863F600E1BC46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D68C1BBED83800D63C4F /* Activities */,
+				CE165B111BAC70C0002D0637 /* Favourites */,
+				CE9486831B7E154F00BDEFBA /* Areas */,
+				CE0AF0A31B569D07001A09FA /* Bridge Discovery */,
+				0D5E38311B4D501E001B7ED5 /* Controls */,
+				0D9DD18A1B39649600BBC978 /* Devices */,
+				0D1A19271B6678E20091F3D9 /* Places */,
+				85ECA97A1B5543F900197A41 /* Login */,
+				0D10BBFE1B6FC8750015AB07 /* Settings */,
+				0D6150AA1B721C31008F9FA8 /* Developer options */,
+				0D12A7A71B7391E8005AD739 /* About */,
+				0D9DD1861B3963C600BBC978 /* CSRMainTableViewController.h */,
+				0D9DD1871B3963C600BBC978 /* CSRMainTableViewController.m */,
+				0DFC7A0A1B3863F600E1BC46 /* CSRMainViewController.h */,
+				0DFC7A0B1B3863F600E1BC46 /* CSRMainViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DFC7A1C1B38645300E1BC46 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CE96B5241B57AC48009BAF5A /* CBPeripheral+Info.h */,
+				CE96B5251B57AC48009BAF5A /* CBPeripheral+Info.m */,
+				CEF52A771B3C5CF000C08599 /* NSManagedObject+DeleteEntities.h */,
+				CEF52A781B3C5CF000C08599 /* NSManagedObject+DeleteEntities.m */,
+				0DFC7A1D1B38645300E1BC46 /* UIViewController+CSRMenuSlidingViewController.h */,
+				0DFC7A1E1B38645300E1BC46 /* UIViewController+CSRMenuSlidingViewController.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0DFC7A211B38649500E1BC46 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE96B5271B57ACC3009BAF5A /* CSRConstants.h */,
+				85ECA97E1B55442D00197A41 /* CSRAlertView.h */,
+				85ECA97F1B55442D00197A41 /* CSRAlertView.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3E4180A02FC2481021C09203 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21E8BD706E7999E674D8A47D /* Pods-CSRmeshDemo.debug.xcconfig */,
+				3F31E078E653B6081DA01E2B /* Pods-CSRmeshDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85ECA97A1B5543F900197A41 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				85ECA97B1B55441400197A41 /* CSRLoginViewController.h */,
+				85ECA97C1B55441400197A41 /* CSRLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CE09D68C1BBED83800D63C4F /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D6901BBED8EB00D63C4F /* Cells */,
+				CE09D68D1BBED8D200D63C4F /* CSRActivitiesViewController.h */,
+				CE09D68E1BBED8D200D63C4F /* CSRActivitiesViewController.m */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		CE09D6901BBED8EB00D63C4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D6961BBEDC2300D63C4F /* CSRActivitiesTableViewCell.h */,
+				CE09D6971BBEDC2300D63C4F /* CSRActivitiesTableViewCell.m */,
+				CE09D6981BBEDC2300D63C4F /* CSRActivitiesTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE0AF0A31B569D07001A09FA /* Bridge Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				CE0AF0A41B569D27001A09FA /* CSRBridgeDiscoveryViewController.h */,
+				CE0AF0A51B569D27001A09FA /* CSRBridgeDiscoveryViewController.m */,
+			);
+			path = "Bridge Discovery";
+			sourceTree = "<group>";
+		};
+		CE165B111BAC70C0002D0637 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				CE165B121BAC70C0002D0637 /* Cells */,
+				CE165B131BAC7156002D0637 /* CSRFavouritesCollectionViewController.h */,
+				CE165B141BAC7156002D0637 /* CSRFavouritesCollectionViewController.m */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		CE165B121BAC70C0002D0637 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE165B161BAC7160002D0637 /* CSRFavouritesCollectionViewCell.h */,
+				CE165B171BAC7160002D0637 /* CSRFavouritesCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE31FDA41BAAB2E100CA4772 /* CSRmeshDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE31FDA51BAAB2E100CA4772 /* CSRmeshDemoUITests.m */,
+				CE31FDA71BAAB2E100CA4772 /* Info.plist */,
+			);
+			path = CSRmeshDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE80334C1B39997100A7E3F0 /* DevicesManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE80334D1B39997100A7E3F0 /* CSRDevicesManager.h */,
+				CE80334E1B39997100A7E3F0 /* CSRDevicesManager.m */,
+				CE80334F1B39997100A7E3F0 /* CSRmeshDevice.h */,
+				CE8033501B39997100A7E3F0 /* CSRmeshDevice.m */,
+				CE8033511B39997100A7E3F0 /* CSRmeshArea.h */,
+				CE8033521B39997100A7E3F0 /* CSRmeshArea.m */,
+			);
+			path = DevicesManager;
+			sourceTree = "<group>";
+		};
+		CE9486831B7E154F00BDEFBA /* Areas */ = {
+			isa = PBXGroup;
+			children = (
+				CEF67E871BBC301F00A514FF /* Root */,
+				CE9486871B7E161900BDEFBA /* Cells */,
+				CE9486841B7E157900BDEFBA /* CSRAreasMainViewController.h */,
+				CE9486851B7E157900BDEFBA /* CSRAreasMainViewController.m */,
+				CE2236AF1B8DFF9A0050BFEF /* CSRAreasSearchMainViewController.h */,
+				CE2236B01B8DFF9A0050BFEF /* CSRAreasSearchMainViewController.m */,
+				CE94868B1B7E18E900BDEFBA /* CSRAreasDetailViewController.h */,
+				CE94868C1B7E18E900BDEFBA /* CSRAreasDetailViewController.m */,
+				CE5415321B86146600B6E3B2 /* CSRDeviceSelectionViewController.h */,
+				CE5415331B86146600B6E3B2 /* CSRDeviceSelectionViewController.m */,
+			);
+			path = Areas;
+			sourceTree = "<group>";
+		};
+		CE9486871B7E161900BDEFBA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE48FC641B81D66E00EF6157 /* CSRAreaTableViewCell.xib */,
+				CE9486881B7E165D00BDEFBA /* CSRAreaTableViewCell.h */,
+				CE9486891B7E165D00BDEFBA /* CSRAreaTableViewCell.m */,
+				CE5415351B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.h */,
+				CE5415361B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.m */,
+				CE5415371B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEADA8F31B3AF57000D18D56 /* LoadShareManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E69F21B4D68FE000CF461 /* CSRParseAndLoad.h */,
+				CE0E69F31B4D68FE000CF461 /* CSRParseAndLoad.m */,
+				CEADA8F41B3AF57000D18D56 /* CSRDatabaseViewController.h */,
+				CEADA8F51B3AF57000D18D56 /* CSRDatabaseViewController.m */,
+			);
+			path = LoadShareManager;
+			sourceTree = "<group>";
+		};
+		CEE5E7231B3989DF0039F83C /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D732D6F1BA040100041195E /* CSRGatewayEntity.h */,
+				0D732D701BA040100041195E /* CSRGatewayEntity.m */,
+				0D835B921B975E8800FF4376 /* CSRAreaEntity.h */,
+				0D835B931B975E8800FF4376 /* CSRAreaEntity.m */,
+				0D835B8C1B975E8800FF4376 /* CSRPlaceEntity.h */,
+				0D835B8D1B975E8800FF4376 /* CSRPlaceEntity.m */,
+				0D835B891B975E8800FF4376 /* CSRUserEntity.h */,
+				0D835B8A1B975E8800FF4376 /* CSRUserEntity.m */,
+				0D835B861B975E8800FF4376 /* CSRDeviceEntity.h */,
+				0D835B871B975E8800FF4376 /* CSRDeviceEntity.m */,
+				0D835B831B975E8700FF4376 /* CSRSettingsEntity.h */,
+				0D835B841B975E8700FF4376 /* CSRSettingsEntity.m */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		CEF67E871BBC301F00A514FF /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CE182C821BBD364200124808 /* CSRSegmentDevicesViewController.h */,
+				CE182C831BBD364200124808 /* CSRSegmentDevicesViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DE95D011B297FFB006D0397 /* CSRmeshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE95D281B297FFB006D0397 /* Build configuration list for PBXNativeTarget "CSRmeshDemo" */;
+			buildPhases = (
+				793752C0234745CD2D84C393 /* Check Pods Manifest.lock */,
+				0DE95CFE1B297FFB006D0397 /* Sources */,
+				0DE95CFF1B297FFB006D0397 /* Frameworks */,
+				0DE95D001B297FFB006D0397 /* Resources */,
+				5BD263736EBF82E8F1FE0077 /* Copy Pods Resources */,
+				B4017E617423C6B840EA3866 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSRmeshDemo;
+			productName = CSRmeshDemo;
+			productReference = 0DE95D021B297FFB006D0397 /* CSRmeshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE31FDA21BAAB2E100CA4772 /* CSRmeshDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE31FDAA1BAAB2E100CA4772 /* Build configuration list for PBXNativeTarget "CSRmeshDemoUITests" */;
+			buildPhases = (
+				CE31FD9F1BAAB2E100CA4772 /* Sources */,
+				CE31FDA01BAAB2E100CA4772 /* Frameworks */,
+				CE31FDA11BAAB2E100CA4772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE31FDA91BAAB2E100CA4772 /* PBXTargetDependency */,
+			);
+			name = CSRmeshDemoUITests;
+			productName = CSRmeshDemoUITests;
+			productReference = CE31FDA31BAAB2E100CA4772 /* CSRmeshDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DE95CFA1B297FFB006D0397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CSR;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Cambridge Silicon Radio Ltd";
+				TargetAttributes = {
+					0DE95D011B297FFB006D0397 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = VE97N6S89D;
+					};
+					CE31FDA21BAAB2E100CA4772 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 0DE95D011B297FFB006D0397;
+					};
+				};
+			};
+			buildConfigurationList = 0DE95CFD1B297FFB006D0397 /* Build configuration list for PBXProject "CSRmeshDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DE95CF91B297FFB006D0397;
+			productRefGroup = 0DE95D031B297FFB006D0397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DE95D011B297FFB006D0397 /* CSRmeshDemo */,
+				CE31FDA21BAAB2E100CA4772 /* CSRmeshDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DE95D001B297FFB006D0397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D835B821B974A1100FF4376 /* Main.storyboard in Resources */,
+				0D835B811B974A1100FF4376 /* LaunchScreen.xib in Resources */,
+				0D1A19331B67744D0091F3D9 /* CSRPlaceTableViewCell.xib in Resources */,
+				0D422ACA1B3ADCBF00F2B77A /* CSRDeviceTableViewCell.xib in Resources */,
+				0DE95D161B297FFB006D0397 /* Images.xcassets in Resources */,
+				CE48FC651B81D66E00EF6157 /* CSRAreaTableViewCell.xib in Resources */,
+				CE5415391B86202B00B6E3B2 /* CSRDeviceSelectionTableViewCell.xib in Resources */,
+				CE09D69A1BBEDC2300D63C4F /* CSRActivitiesTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE31FDA11BAAB2E100CA4772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BD263736EBF82E8F1FE0077 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSRmeshDemo/Pods-CSRmeshDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793752C0234745CD2D84C393 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4017E617423C6B840EA3866 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSRmeshDemo/Pods-CSRmeshDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DE95CFE1B297FFB006D0397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D835B951B97603600FF4376 /* CSRmesh.xcdatamodeld in Sources */,
+				0D835B361B9749E600FF4376 /* AppDelegate.m in Sources */,
+				0D835B371B9749E600FF4376 /* CBPeripheral+Info.m in Sources */,
+				0D835B381B9749E600FF4376 /* NSManagedObject+DeleteEntities.m in Sources */,
+				0D835B391B9749E600FF4376 /* UIViewController+CSRMenuSlidingViewController.m in Sources */,
+				CE09D6991BBEDC2300D63C4F /* CSRActivitiesTableViewCell.m in Sources */,
+				0D835B3A1B9749E600FF4376 /* CSRAlertView.m in Sources */,
+				0D835B851B975E8700FF4376 /* CSRSettingsEntity.m in Sources */,
+				0D835B3B1B9749E600FF4376 /* CSRMeshUtilities.m in Sources */,
+				0D835B941B975E8800FF4376 /* CSRAreaEntity.m in Sources */,
+				0D835B3C1B9749E600FF4376 /* CSRUtilities.m in Sources */,
+				0D835B3D1B9749E600FF4376 /* CSRmeshManager.m in Sources */,
+				0D835B3F1B9749E600FF4376 /* CSRParseAndLoad.m in Sources */,
+				0D835B401B9749E600FF4376 /* CSRDatabaseViewController.m in Sources */,
+				0D835B411B9749E600FF4376 /* CSRAppStateManager.m in Sources */,
+				0D835B421B9749E600FF4376 /* CSRDevicesManager.m in Sources */,
+				0D835B431B9749E600FF4376 /* CSRmeshDevice.m in Sources */,
+				0D835B441B9749E600FF4376 /* CSRmeshArea.m in Sources */,
+				0D9723A81BB42EB100CDACFD /* CSRAssociatedGatewaysListViewController.m in Sources */,
+				0D835B461B9749E600FF4376 /* CSRDatabaseManager.m in Sources */,
+				0D835B881B975E8800FF4376 /* CSRDeviceEntity.m in Sources */,
+				0D835B8B1B975E8800FF4376 /* CSRUserEntity.m in Sources */,
+				0D835B4E1B9749E600FF4376 /* CSRMenuTableViewCell.m in Sources */,
+				0D835B4F1B9749E600FF4376 /* CSRMenuActionTableViewCell.m in Sources */,
+				0D835B501B9749E600FF4376 /* CSRMenuPercentDrivenInteractiveTransition.m in Sources */,
+				0D835B511B9749E600FF4376 /* CSRMenuSlidingAnimationController.m in Sources */,
+				0D835B521B9749E600FF4376 /* CSRMenuSlidingInteractiveTransition.m in Sources */,
+				0D835B531B9749E600FF4376 /* CSRMenuSlidingSegue.m in Sources */,
+				0D835B541B9749E600FF4376 /* CSRMenuSlidingViewController.m in Sources */,
+				0D835B551B9749E600FF4376 /* CSRMenuViewController.m in Sources */,
+				0D835B561B9749E600FF4376 /* CSRCheckbox.m in Sources */,
+				0D835B571B9749E600FF4376 /* CSRAreaTableViewCell.m in Sources */,
+				0D835B581B9749E600FF4376 /* CSRDeviceSelectionTableViewCell.m in Sources */,
+				CED9EF061BD66C4C004EBAB0 /* CSRAreaSelectionManager.m in Sources */,
+				CE182C841BBD364200124808 /* CSRSegmentDevicesViewController.m in Sources */,
+				0D9723AB1BB4474800CDACFD /* CSRGatewayDetailsViewController.m in Sources */,
+				0D835B591B9749E600FF4376 /* CSRAreasMainViewController.m in Sources */,
+				0D835B5A1B9749E600FF4376 /* CSRAreasSearchMainViewController.m in Sources */,
+				0D835B5B1B9749E600FF4376 /* CSRAreasDetailViewController.m in Sources */,
+				0D835B5C1B9749E600FF4376 /* CSRDeviceSelectionViewController.m in Sources */,
+				0D835B5D1B9749E600FF4376 /* CSRBridgeDiscoveryViewController.m in Sources */,
+				0D835B5E1B9749E600FF4376 /* CSRLightViewController.m in Sources */,
+				0D835B5F1B9749E600FF4376 /* CSRDeviceTableViewCell.m in Sources */,
+				0D835B601B9749E600FF4376 /* CSRNewDeviceTableViewCell.m in Sources */,
+				0D835B611B9749E600FF4376 /* CSRDevicesListViewController.m in Sources */,
+				0D9723B11BB4521B00CDACFD /* CSRGatewayDetailsTableViewCell.m in Sources */,
+				CEF67E8D1BBC31FE00A514FF /* CSRLockViewController.m in Sources */,
+				0D835B621B9749E600FF4376 /* CSRDevicesSearchListTableViewController.m in Sources */,
+				0D835B631B9749E600FF4376 /* CSRDeviceDetailsViewController.m in Sources */,
+				0D835B641B9749E600FF4376 /* CSRAddDeviceWizardViewController.m in Sources */,
+				0D835B651B9749E600FF4376 /* CSRAreaSelectionViewController.m in Sources */,
+				0D835B661B9749E600FF4376 /* CSRAreaSelectionSearchTableViewController.m in Sources */,
+				0D835B8E1B975E8800FF4376 /* CSRPlaceEntity.m in Sources */,
+				CE09D68F1BBED8D200D63C4F /* CSRActivitiesViewController.m in Sources */,
+				0D835B671B9749E600FF4376 /* CSRPlaceTableViewCell.m in Sources */,
+				0D835B681B9749E600FF4376 /* CSRPlaceColorCollectionViewCell.m in Sources */,
+				0DDB057F1BA2E860004F734F /* CSRWizardPopoverViewController.m in Sources */,
+				0D74DE7C1BA8300000D0BB1B /* CSRTemperatureViewController.m in Sources */,
+				0D835B691B9749E600FF4376 /* CSRPlaceIconCollectionViewCell.m in Sources */,
+				0D732D711BA040100041195E /* CSRGatewayEntity.m in Sources */,
+				0D835B6A1B9749E600FF4376 /* CSRManagePlacesViewController.m in Sources */,
+				0D835B6B1B9749E700FF4376 /* CSRPlacesSearchTableViewController.m in Sources */,
+				0D835B6C1B9749E700FF4376 /* CSRPlaceDetailsViewController.m in Sources */,
+				CE165B181BAC7160002D0637 /* CSRFavouritesCollectionViewCell.m in Sources */,
+				0D835B6D1B9749E700FF4376 /* CSRPlacesColorIconPickerViewController.m in Sources */,
+				0D835B6E1B9749E700FF4376 /* CSRLoginViewController.m in Sources */,
+				0D835B6F1B9749E700FF4376 /* CSRSwitchableTableViewCell.m in Sources */,
+				0D835B701B9749E700FF4376 /* CSRDetailsTableViewCell.m in Sources */,
+				0D835B711B9749E700FF4376 /* CSRActionTableViewCell.m in Sources */,
+				0D835B721B9749E700FF4376 /* CSRBearerOptionTableViewCell.m in Sources */,
+				0D835B731B9749E700FF4376 /* CSRGatewayTableViewCell.m in Sources */,
+				0D835B741B9749E700FF4376 /* CSRApplicationSettingsViewController.m in Sources */,
+				0D835B751B9749E700FF4376 /* CSRBearerPickerViewController.m in Sources */,
+				0D835B761B9749E700FF4376 /* CSRGatewayListViewController.m in Sources */,
+				0D835B771B9749E700FF4376 /* CSRGatewayConnectionViewController.m in Sources */,
+				0D835B781B9749E700FF4376 /* CSRDeveloperOptionsViewController.m in Sources */,
+				0D835B791B9749E700FF4376 /* CSRAboutViewController.m in Sources */,
+				0D835B7A1B9749E700FF4376 /* CSRMainTableViewController.m in Sources */,
+				0D835B7B1B9749E700FF4376 /* CSRMainViewController.m in Sources */,
+				0D835B7C1B9749E700FF4376 /* CSRBridgeRoaming.m in Sources */,
+				0D835B7D1B9749E700FF4376 /* CSRBluetoothLE.m in Sources */,
+				0D835B7E1B9749E700FF4376 /* CSRmeshSettings.m in Sources */,
+				CE165B151BAC7156002D0637 /* CSRFavouritesCollectionViewController.m in Sources */,
+				0D835B7F1B9749E700FF4376 /* CSRmeshStyleKit.m in Sources */,
+				0D835B801B9749E700FF4376 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE31FD9F1BAAB2E100CA4772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE31FDA61BAAB2E100CA4772 /* CSRmeshDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE31FDA91BAAB2E100CA4772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DE95D011B297FFB006D0397 /* CSRmeshDemo */;
+			targetProxy = CE31FDA81BAAB2E100CA4772 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DE95D121B297FFB006D0397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DE95D131B297FFB006D0397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DE95D171B297FFB006D0397 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DE95D181B297FFB006D0397 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DE95D261B297FFB006D0397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DE95D271B297FFB006D0397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DE95D291B297FFB006D0397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E8BD706E7999E674D8A47D /* Pods-CSRmeshDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: CSR BG Dev (T2CLBKUFMG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: CSR BG Dev (T2CLBKUFMG)";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CSRmeshDemo/CSRmeshDemo.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = CSRmeshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csr.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71bfbc50-5b49-4f46-a331-678a9a5751e0";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DE95D2A1B297FFB006D0397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F31E078E653B6081DA01E2B /* Pods-CSRmeshDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cambridge Silicon Radio Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cambridge Silicon Radio Ltd";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CSRmeshDemo/CSRmeshDemo.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = CSRmeshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csr.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "532073d7-d864-4cba-a9e9-5136dc4bf85b";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE31FDAB1BAAB2E100CA4772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = CSRmeshDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qti.CSRmeshDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = CSRmeshDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE31FDAC1BAAB2E100CA4772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CSRmeshDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qti.CSRmeshDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = CSRmeshDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DE95CFD1B297FFB006D0397 /* Build configuration list for PBXProject "CSRmeshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE95D261B297FFB006D0397 /* Debug */,
+				0DE95D271B297FFB006D0397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DE95D281B297FFB006D0397 /* Build configuration list for PBXNativeTarget "CSRmeshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE95D291B297FFB006D0397 /* Debug */,
+				0DE95D2A1B297FFB006D0397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE31FDAA1BAAB2E100CA4772 /* Build configuration list for PBXNativeTarget "CSRmeshDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE31FDAB1BAAB2E100CA4772 /* Debug */,
+				CE31FDAC1BAAB2E100CA4772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEE5E7381B398ABB0039F83C /* CSRmesh.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEE5E7391B398ABB0039F83C /* CSRmesh.xcdatamodel */,
+			);
+			currentVersion = CEE5E7391B398ABB0039F83C /* CSRmesh.xcdatamodel */;
+			path = CSRmesh.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0DE95CFA1B297FFB006D0397 /* Project object */;
+}

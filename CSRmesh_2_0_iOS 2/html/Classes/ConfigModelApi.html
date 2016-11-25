@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ConfigModelApi Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CSRmesh Library </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Qualcomm Techologies International</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/configModelApiDelegate">configModelApiDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/discoverDevice:success:failure:">- discoverDevice:success:failure:</option>
+		
+		<option value="//api/name/getInfo:infoType:">- getInfo:infoType:</option>
+		
+		<option value="//api/name/getInfo:infoType:success:failure:">- getInfo:infoType:success:failure:</option>
+		
+		<option value="//api/name/getParameters:success:failure:">- getParameters:success:failure:</option>
+		
+		<option value="//api/name/resetDevice:">- resetDevice:</option>
+		
+		<option value="//api/name/setDeviceId:deviceHash:newDeviceId:">- setDeviceId:deviceHash:newDeviceId:</option>
+		
+		<option value="//api/name/setParameters:txInterval:txDuration:rxDutyCycle:txPower:timeToLive:success:failure:">- setParameters:txInterval:txDuration:rxDutyCycle:txPower:timeToLive:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ConfigModelApi Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/CSRmeshApi.html">CSRmeshApi</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ConfigModelApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getInfo:infoType:success:failure:" title="getInfo:infoType:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInfo:infoType:success:failure:">&ndash;&nbsp;getInfo:infoType:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getInfo - Request low level info from device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getInfo:(NSNumber *)<em>deviceId</em> infoType:(NSNumber *)<em>infoType</em> success:(void ( ^ ) ( NSNumber *deviceId , NSDictionary *info , NSNumber *infoType ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>infoType</code></th>
+						<td><ul>
+<li>The type of Info
+0 - UUID_low,
+1 - UUID_high,
+2 - Model_low,
+3 - Model_high,
+4 - VID_PID_Version,
+5 - Appearance,
+6 - LastETag
+ff - UnknownInfoType</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - The id of the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInfo:infoType:" title="getInfo:infoType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInfo:infoType:">&ndash;&nbsp;getInfo:infoType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getInfo:(NSNumber *)<em>deviceId</em> infoType:(NSNumber *)<em>infoType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetDevice:" title="resetDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetDevice:">&ndash;&nbsp;resetDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>resetDevice - Request the device to delete its Association information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetDevice:(NSNumber *)<em>deviceId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getParameters:success:failure:" title="getParameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getParameters:success:failure:">&ndash;&nbsp;getParameters:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>getParameters - Retrives configuration parameters from the Device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)getParameters:(NSNumber *)<em>deviceId</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *txInterval , NSNumber *txDuration , NSNumber *rxDutyCycle , NSNumber *txPower , NSNumber *timeToLive ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - The id of the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setParameters:txInterval:txDuration:rxDutyCycle:txPower:timeToLive:success:failure:" title="setParameters:txInterval:txDuration:rxDutyCycle:txPower:timeToLive:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setParameters:txInterval:txDuration:rxDutyCycle:txPower:timeToLive:success:failure:">&ndash;&nbsp;setParameters:txInterval:txDuration:rxDutyCycle:txPower:timeToLive:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>@brief setParameters - Retrives configuration parameters from the Device</li>
+<li>@param deviceId - (NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice</li>
+<li>@param txInterval - The TxInterval, or transmit interval, field is a 16-bit unsigned integer in milliseconds that determines the interval between transmitting messages.</li>
+<li>@param txDuration - The TxDuration, or transmit duration, field is a 16-bit unsigned integer in milliseconds that determines the duration of transmission for a single message.</li>
+<li>@param rxDutyCycle - The RxDutyCycle, or receiver duty cycle, field is an 8-bit unsigned integer that determines how often the devices should be listening for mesh messages as 255ths of fully listening.
+Note: The value 0x00 implies that this device does not listen for mesh messages.
+Note: The value 0xFF implies that a device should continuously listen for mesh messages.</li>
+<li>@param txPower - The TxPower, or transmit power, field is an 8-bit signed integer in decibels that determines the radio transmit power for a device.</li>
+<li>@param timeToLive - The TimeToLive field is an 8-bit unsigned integer that determines the default value for the TTL packet field in an MTL packet.</li>
+<li>@param success - Block called upon successful execution</li>
+<li>@param failure - Block called upon error</li>
+<li>@return meshRequestId - The id of the message.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setParameters:(NSNumber *)<em>deviceId</em> txInterval:(NSNumber *)<em>txInterval</em> txDuration:(NSNumber *)<em>txDuration</em> rxDutyCycle:(NSNumber *)<em>rxDutyCycle</em> txPower:(NSNumber *)<em>txPower</em> timeToLive:(NSNumber *)<em>timeToLive</em> success:(void ( ^ ) ( NSNumber *deviceId , NSNumber *txInterval , NSNumber *txDuration , NSNumber *rxDutyCycle , NSNumber *txPower , NSNumber *timeToLive ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/discoverDevice:success:failure:" title="discoverDevice:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/discoverDevice:success:failure:">&ndash;&nbsp;discoverDevice:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>discoverDevice - Method can be used to discvoer unknown devices in a mesh network. Message can be directed at a specific deviceId or 0 for all devices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)discoverDevice:(NSNumber *)<em>deviceId</em> success:(void ( ^ ) ( NSNumber *deviceId , NSData *deviceHash ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice. This can be 0 in which case all devices shall respond.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><ul>
+<li>Block called upon successful execution. The DeviceHash field is a 64-bit hash of the DeviceUUID that is used to identify this device.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><ul>
+<li>Block called upon error</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - The id of the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDeviceId:deviceHash:newDeviceId:" title="setDeviceId:deviceHash:newDeviceId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceId:deviceHash:newDeviceId:">&ndash;&nbsp;setDeviceId:deviceHash:newDeviceId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>setDeviceId - Upon receiving this message where the device has a DeviceID of 0x0000, and the DeviceHash of the message matches the DeviceHash of this device, then the DeviceID of this device shall be set to the DeviceID field of this message. Use the discoverDevice command to check the new DeviceId has been set. Note: This message should not be necessary in normal operation of a mesh network as the DeviceID is distributed as part of the MASP protocol in the MASP_ID_DISTRIBUTION message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)setDeviceId:(NSNumber *)<em>deviceId</em> deviceHash:(NSData *)<em>deviceHash</em> newDeviceId:(NSNumber *)<em>newDeviceId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceId</code></th>
+						<td><ul>
+<li>(NSNumber *) The ID of this device or 0 for all devices. Refer to the delegate <a href="../Classes/MeshServiceApi.html">MeshServiceApi</a>.didAssociateDevice.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceHash</code></th>
+						<td><ul>
+<li>(NSData *)  The DeviceHash field is a 64-bit hash of the DeviceUUID.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newDeviceId</code></th>
+						<td><ul>
+<li>(NSNumber *)  The DeviceId to be set</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>meshRequestId - The id of the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ConfigModelApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configModelApiDelegate" title="configModelApiDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configModelApiDelegate">&nbsp;&nbsp;configModelApiDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ConfigModelApiDelegate&gt; configModelApiDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Qualcomm Techologies International. All rights reserved. Updated: 2015-11-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
