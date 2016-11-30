@@ -8,6 +8,7 @@
 
 #import "TestSelectViewController.h"
 #include "TestSelectTableViewCell.h"
+#import "TestSelectModel.h"
 
 @interface TestSelectViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -45,8 +46,8 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 9;
-  //  return _dataArray.count;
+  //  return 9;
+    return _dataArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -62,7 +63,9 @@
         cell.numberLabel.layer.masksToBounds=YES;
         cell.numberLabel.layer.cornerRadius = 8;
     }
-    
+    TestSelectModel *model = _dataArray[indexPath.row];
+    cell.numberLabel.text = model.pid;
+    cell.titleLabel.text = model.pname;
     return cell;
 }
 /*
