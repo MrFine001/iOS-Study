@@ -9,6 +9,7 @@
 #import "TestSelectViewController.h"
 #include "TestSelectTableViewCell.h"
 #import "TestSelectModel.h"
+#import "AnswerViewController.h"
 
 @interface TestSelectViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -67,6 +68,12 @@
     cell.numberLabel.text = model.pid;
     cell.titleLabel.text = model.pname;
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    AnswerViewController *avc = [[AnswerViewController alloc]init];
+    avc.number = indexPath.row;
+    [self.navigationController pushViewController:avc animated:YES];
 }
 /*
 #pragma mark - Navigation
